@@ -1,0 +1,28 @@
+.footer {
+    background: #2730ab;
+    color:whitesmoke;
+    
+    padding:5rem;
+    padding-bottom: .2rem;
+    display:"flex";
+    
+   
+}
+li {
+    list-style: none;
+    margin-bottom: .3rem;
+    color: #cad0db;
+}
+.about {
+    margin-bottom: .8rem;
+    font-size: 1.1rem;
+    color: white;
+    border-bottom-width:.3px;
+   border-bottom: solid;
+   border-color: cad0db;
+  padding-bottom: .5rem;
+}
+.element{
+    display: flex;
+
+}

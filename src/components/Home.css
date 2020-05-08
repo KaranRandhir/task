@@ -1,0 +1,42 @@
+.text {
+    
+    widows: 80%;
+    text-align: center;
+    font-weight: 300;
+    font-family: 'Source Serif Pro', serif;
+    font-size:2.8rem;
+    color:#6d6f78;
+    margin-top: 8rem;
+}
+
+.inputs {
+    display:flex;
+    flex-direction: row;
+    margin-top: 6rem;
+    padding:2rem 1rem;
+    justify-content: center;
+    
+    background:#d7ebf7;
+}
+.single{
+    display:flex;
+    flex-direction: column;
+    color:#7ea6e6;
+    font-size: 1rem;
+    
+}
+
+.details {
+    font-size:.8rem;
+}
+
+.second{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.5rem;
+    padding-left:4rem;
+    padding-right:4rem;
+    text-align: center;
+    
+}

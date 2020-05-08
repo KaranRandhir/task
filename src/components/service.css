@@ -1,0 +1,22 @@
+.service{
+    height:11rem;
+    width:14rem;
+    border: .8px;
+    border-color: rgb(177, 190, 202);
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    align-items: center;
+    justify-content:space-around;
+    font-weight: bold;
+}
+.user {
+    height:3rem;
+    width: 3rem;
+    
+}
+.service .text{
+    font-weight: bold;
+}

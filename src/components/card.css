@@ -1,0 +1,23 @@
+.card{
+    display:flex;
+    flex-direction: column;
+    margin-right: 3rem;
+    width:25rem;
+    margin-bottom: 2rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.png{
+    height:5rem;
+    width:5rem;
+    margin-bottom: 2rem;
+}
+.card .title {
+    color:#348feb;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    font-family: 'Roboto', sans-serif;
+
+}
