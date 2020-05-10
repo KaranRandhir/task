@@ -46,9 +46,9 @@ const Home = ()=> {
                 <div className="details">
                 READY TO LOAD
                 </div>
-                <div class="ui left icon input">
+                <div className="ui left icon input">
                 <input type="text" placeholder="Date"/>
-                <i class="calendar alternate outline icon"></i>
+                <i className="calendar alternate outline icon"></i>
                 </div>
                 </div>
                 
@@ -56,9 +56,9 @@ const Home = ()=> {
                 <div className="details">
                 TYPE OF SHIPMENT
                 </div>
-                <div class="ui left icon input">
+                <div className="ui left icon input">
                 <input type="text" placeholder="Type"/>
-                <i class="archive icon"></i>
+                <i className="archive icon"></i>
                 </div>
                 </div>
 

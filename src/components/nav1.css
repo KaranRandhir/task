@@ -1,0 +1,45 @@
+.company{
+    display:flex;
+    flex-direction: column;
+    font-family: 'Source Serif Pro', serif;
+}
+.company .title {
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom: .2rem;
+}
+
+.company .tagline {
+    font-weight: 550;
+    font-size: 1.4rem;
+    color: green;
+}
+
+.login {
+    margin-left:10rem;
+}
+
+.light {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+}
+@media only screen and (max-width: 600px) {
+    .company .title {
+        font-size: 2.8rem;
+        font-weight: 300;
+        margin-bottom: .2rem;
+        justify-self: center;
+        align-self: center
+    }
+    .company .tagline {
+        font-weight: 550;
+        font-size: 1.2rem;
+        color: green;
+    }
+    .company{
+        display:flex;
+        align-items: center;
+        justify-content:center;
+    }
+  }
+

@@ -2,6 +2,7 @@ import React from "react"
 import "./infocard.css"
 import desktop from "../assets/desktop.png"
 import Card from "./Card"
+import Fade from 'react-reveal/Fade';
 
 const InfoCard = () => {
     return(
@@ -21,18 +22,22 @@ const InfoCard = () => {
         </div>
         <div style={{display:"flex", flexDirection:"column"}}>
         <div style={{marginTop:"10rem",width:"40rem"}}>
+        <Fade left>
         <span className="topic">MANAGE</span><br/>
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
         et dolore magna aliqua. Ut enim ad minim veniam,
          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        </Fade>
         </div>
-        
+       
+        <Fade right>
         <div style={{marginTop:"5rem",width:"40rem",alignSelf:"flex-end"}}>
         <span className="topic">TRACK YOUR SHIPMENTS</span><br/>
         2 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
         et dolore magna aliqua. Ut enim ad minim veniam,
          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
         </div>
+        </Fade>
         <div style={{marginTop:"5rem",width:"40rem"}}>
         <span className="topic">ONLINE DOCUMENTATION</span><br/>
         3 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 

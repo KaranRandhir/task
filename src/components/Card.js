@@ -11,7 +11,7 @@ const Card = ({img,title,content}) => {
             {title}
             </div>
             <div className="content">
-            {content}
+            {content}       
             </div>
         </div>
         )

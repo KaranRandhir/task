@@ -5,18 +5,30 @@ import Home from "./Home"
 import InfoCard from "./InfoCard"
 import Services from "./Services"
 import Footer from "./Footer"
-const App = () => {
+class App extends React.PureComponent  {
+    
+    
+    render() {
     return(
         <div>
-            <Navbar/>
+            
+            <Navbar>
+            
             <Container>
+
                 <Home/>
                 <InfoCard/>
                 <Services/>
+                
             </Container>
             <Footer/>
-        </div>
-    )
+            </Navbar>
+            </div>
+
+
+            
+      
+    ) }
 }
 
 export default App;

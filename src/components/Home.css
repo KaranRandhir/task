@@ -5,8 +5,8 @@
     font-weight: 300;
     font-family: 'Source Serif Pro', serif;
     font-size:2.8rem;
-    color:#6d6f78;
-    margin-top: 8rem;
+    color:#525252;
+    padding-top: 8rem;
 }
 
 .inputs {
@@ -40,3 +40,11 @@
     text-align: center;
     
 }
+
+@media only screen and (max-width: 600px) {
+    .inputs{
+        display: flex;
+        flex-direction: column;
+      
+    }
+  }
