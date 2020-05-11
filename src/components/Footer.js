@@ -24,14 +24,12 @@ const Footer = () => {
                     <li></li>
                 </ul>
             </div>
-            
-           
             <div className="element">
                 <ul>
                     <li className="about">PARTNER</li>
-                    <li>Mobile Healthcare Providers</li>
-                    <li>Mobile Urgentcare Providers</li>
-                    <li>Mobile Healthcare Volunteer</li>
+                    <li>Mobile Healthcare </li>
+                    <li>Mobile Urgentcare </li>
+                    <li>Mobile Healthcare </li>
                     <li></li>
                 </ul>
             </div>
