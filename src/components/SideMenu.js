@@ -8,7 +8,7 @@ const SideMenu = ({width}) => {
          
         
         <a  style={{fontSize:"1.5rem"}}class="item">
-          Log in/Sign up
+          Log in
         </a>
         <a style={{fontSize:"1.5rem"}} class="item">
           Home

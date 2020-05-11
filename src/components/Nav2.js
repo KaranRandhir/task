@@ -16,7 +16,7 @@ const Nav2 = ({onPress}) => {
           </div>
         </div>
         <div className="right menu">
-          <a style={{alignSelf:"center",color:"black"}}onClick={()=>onPress()}><i  className="bars large icon"></i></a>
+          <a style={{alignSelf:"center",color:"black"}}onClick={()=>onPress()}><i  className="bars big icon"></i></a>
         </div>
        
       
