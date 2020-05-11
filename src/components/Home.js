@@ -5,7 +5,7 @@ import Companies from "./Companies"
 const Home = ()=> {
     return(
         <div className="homepage">
-            <div className="text">
+            <div style={{paddingTop:"8rem"}}className="text">
             <p>A platform created to ease global trade<br/>
                 We bridge every piece of global logistics puzzle.
             </p>
@@ -70,7 +70,7 @@ const Home = ()=> {
                 </div>
                 </div>
 
-                  <div className="text second">
+                  <div style={{paddingTop:"8rem"}} className="text second">
             <p>IndiaPort is a technology coompany closely working on shipping lines and custom brokers 
                 to provide you trouble free-trading.We at IndiaPort are commited to making it easier for the traders
                 to book transport, manage the shipment and solve problems in an organized and quick way.

@@ -3,9 +3,9 @@ import "./nav1.css"
 
 const SideMenu = ({width,onPress}) => {
     return (
-        <div style={{width:`${width}`,overflowX:"hidden",transition:".3s"}}class="ui sidebar visible vertical menu">
+        <div style={{width:`${width}`,overflowX:"hidden",transition:".3s"}}class="ui sidebar visible  vertical menu">
         
-         <a onClick={()=>onPress()}> <i style={{marginLeft:"180px"}} className="close large icon"></i></a>
+         
         
         <a  class="item">
           1

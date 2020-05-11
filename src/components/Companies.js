@@ -6,10 +6,19 @@ import disney from "../assets/disney.png"
 import fedex from "../assets/fedex.png"
 import kodak  from "../assets/kodak.png"
 import gatorade  from "../assets/gatorade.png"
+import HeadShake from 'react-reveal/HeadShake';
+import Pulse from 'react-reveal/Pulse';
+import Fade from 'react-reveal/Fade'
+
+
+
 const Companies = () => {
+
     return (
         <div>
+        
         <div className="wrapper">
+       <Fade>
         <div className="companies">
             <img src={fedex} className="logo" />
             <img src={carlsberg} className="logo" />
@@ -17,8 +26,11 @@ const Companies = () => {
             <img src={disney} className="logo" />
             <img src={kodak} className="logo" />
             <img src={gatorade} className="logo" />
+         
+         
         </div>
-        <div className="text">
+        </Fade>
+        <div className="rating">
             <strong>Trusted choice</strong> of Thousands of PM professionals
             
             <i class="star yellow icon" style={{marginLeft:"1rem"}}></i>
@@ -28,19 +40,27 @@ const Companies = () => {
             <i class="star yellow icon"></i>
         </div>
         </div>
+        
+
         <div className="companies" style={{background:"#dfeaf2",marginTop:"2rem",justifyContent:"space-around",paddingBottom:".5rem"}}>
             <div className="item">
+                <Pulse>
                 15%
+                </Pulse>
                 <div className="info">
                     higher on-time-performance
                 </div>
             </div><div className="item">
-                30%
+            <Pulse>
+                15%
+                </Pulse>
                 <div className="info">
                     lower administrative work
                 </div>
             </div><div className="item">
+            <Pulse>
                 15%
+                </Pulse>
                 <div className="info">
                     total transporation cost save
                 </div>

@@ -7,25 +7,27 @@
     justify-content: space-between;
 }
 .logo{
-    height:2rem;
+    height:3rem;
     width: auto;
+    opacity: .7;
 }
 .wrapper {
     display: flex;
     flex-direction: column;
     background: #f7f0f7;
     margin-top: 8rem;
-    align-content: center;
+ 
     justify-content: center;
-    text-align: center;
+ 
 
 }
-.wrapper .text{
+.wrapper .rating{
     margin-top: 2rem;
     font-size: 1rem;
     font-weight: 400;
     color:black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 
 .companies .item{
