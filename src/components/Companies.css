@@ -46,7 +46,7 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
 @media only screen and (max-width: 600px) {
 
     .companies {
-        grid-template-columns: auto auto auto ;
+        grid-template-columns: auto auto  ;
         display: grid;
         grid-gap: 20px;
         column-gap: 0px;

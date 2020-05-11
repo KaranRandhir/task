@@ -19,7 +19,7 @@ const Companies = () => {
         
         <div className="wrapper">
        <Fade>
-        <div className="companies">
+        <div style={{opacity:"0.5"}}className="companies">
             <div className="item"><img src={fedex} className="logo" /></div>
             <div className="item"><img src={carlsberg} className="logo" /></div>
             <div className="item"><img src={accenture} className="logo" /></div>
@@ -40,7 +40,7 @@ const Companies = () => {
         </div>
         
 
-        <div className="companies" style={{background:"#dfeaf2",marginTop:"2rem",justifyContent:"space-around",paddingBottom:".5rem"}}>
+        <div className="companies" style={{display:"flex",background:"#dfeaf2",marginTop:"2rem",justifyContent:"space-around",paddingBottom:".5rem"}}>
             <div className="item">
                 <Pulse>
                 15%
