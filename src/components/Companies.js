@@ -26,9 +26,7 @@ const Companies = () => {
             <img src={disney} className="logo" />
             <img src={kodak} className="logo" />
             <img src={gatorade} className="logo" />
-         
-         
-        </div>
+         </div>
         </Fade>
         <div className="rating">
             <strong>Trusted choice</strong> of Thousands of PM professionals

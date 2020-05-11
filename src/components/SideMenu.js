@@ -1,21 +1,28 @@
 import React from "react"
 import "./nav1.css"
 
-const SideMenu = ({width,onPress}) => {
+const SideMenu = ({width}) => {
     return (
         <div style={{width:`${width}`,overflowX:"hidden",transition:".3s"}}class="ui sidebar visible  vertical menu">
         
          
         
         <a  class="item">
-          1
+          Log in/Sign up
         </a>
         <a class="item">
-          2
+          Home
         </a>
         <a class="item">
-          3
+          Products
         </a>
+        <a class="item">
+          Tools
+        </a>
+        <a class="item">
+          Support
+        </a>
+
       </div>
       
     )

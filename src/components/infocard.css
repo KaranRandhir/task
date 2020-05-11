@@ -20,3 +20,23 @@
     font-size: 1.2rem;
 }
 
+.even {
+    margin-top: 5rem;
+    width: 40rem;
+    align-self: flex-end;
+}
+.odd {
+    margin-top: 5rem;
+    width: 40rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .row {
+        display:flex;
+        flex-direction: column;
+    }
+.even , .odd {
+     width: auto;
+     align-self: center;
+}  
+}

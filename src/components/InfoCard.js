@@ -31,7 +31,7 @@ const InfoCard = () => {
         
         <div style={{display:"flex", flexDirection:"column"}}>
         <Fade left>
-        <div style={{marginTop:"10rem",width:"40rem"}}>
+        <div className="odd" >
         <span className="topic">MANAGE</span><br/>
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
         et dolore magna aliqua. Ut enim ad minim veniam,
@@ -41,7 +41,7 @@ const InfoCard = () => {
         </Fade>
        
         <Fade right>
-        <div style={{marginTop:"5rem",width:"40rem",alignSelf:"flex-end"}}>
+        <div className="even">
         <span className="topic">TRACK YOUR SHIPMENTS</span><br/>
         2 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
         et dolore magna aliqua. Ut enim ad minim veniam,
@@ -50,7 +50,7 @@ const InfoCard = () => {
         </Fade>
         
         <Fade left>
-        <div  style={{marginTop:"5rem",width:"40rem"}}>
+        <div className="odd">
         <span className="topic">ONLINE DOCUMENTATION</span><br/>
         3 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
         et dolore magna aliqua. Ut enim ad minim veniam,
@@ -58,7 +58,7 @@ const InfoCard = () => {
         </div>
         </Fade>
         <Fade right>
-        <div  style={{marginTop:"5rem",width:"40rem",alignSelf:"flex-end"}}>
+        <div className="even">
         <span className="topic">TRANSPERENCY IN RATES</span><br/>
         4 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
         et dolore magna aliqua. Ut enim ad minim veniam,
