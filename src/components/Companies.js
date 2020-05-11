@@ -20,12 +20,12 @@ const Companies = () => {
         <div className="wrapper">
        <Fade>
         <div className="companies">
-            <img src={fedex} className="logo" />
-            <img src={carlsberg} className="logo" />
-            <img src={accenture} className="logo" />
-            <img src={disney} className="logo" />
-            <img src={kodak} className="logo" />
-            <img src={gatorade} className="logo" />
+            <div className="item"><img src={fedex} className="logo" /></div>
+            <div className="item"><img src={carlsberg} className="logo" /></div>
+            <div className="item"><img src={accenture} className="logo" /></div>
+            <div className="item"><img src={disney} className="logo" /></div>
+            <div className="item"><img src={kodak} className="logo" /></div>
+            <div className="item"><img src={gatorade} className="logo" /></div>
          </div>
         </Fade>
         <div className="rating">
