@@ -4,8 +4,8 @@ const Footer = () => {
     return (
         <div style={{background:"#2730ab",display:"flex",flexDirection:"column",textAlign:"center",marginTop:"5rem"}}>
         <div className="footer">
-            <div  style={{display:"flex",flexDirection:"row",justifyContent:"space-between",textAlign:"center"}}>
-            <div className="pair">
+            <div  className="abouts" >
+           
             <div className="element">
                 <ul>
                     <li className="about">DISCOVER</li>
@@ -24,8 +24,8 @@ const Footer = () => {
                     <li></li>
                 </ul>
             </div>
-            </div>
-            <div className="pair">
+            
+           
             <div className="element">
                 <ul>
                     <li className="about">PARTNER</li>
@@ -44,7 +44,7 @@ const Footer = () => {
                     <li></li>
                 </ul>
             </div>
-            </div>
+            
          
         </div>
         <div style={{marginTop:"1rem"}}>

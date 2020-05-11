@@ -26,6 +26,12 @@ li {
    border-color: cad0db;
   padding-bottom: .5rem;
 }
+.abouts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
 .element{
     display: flex;
 
@@ -46,5 +52,14 @@ li {
         height:40vw;
         width: 40vw;
         text-align: center;
+    }
+    .abouts {
+         
+            grid-template-columns: auto auto  ;
+            display: grid;
+            grid-gap: 20px;
+            column-gap: 0px;
+        
+    
     }
   }

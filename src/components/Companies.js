@@ -8,7 +8,7 @@ import kodak  from "../assets/kodak.png"
 import gatorade  from "../assets/gatorade.png"
 import HeadShake from 'react-reveal/HeadShake';
 import Pulse from 'react-reveal/Pulse';
-import Fade from 'react-reveal/Fade'
+import Flip from 'react-reveal/Flip'
 
 
 
@@ -18,8 +18,8 @@ const Companies = () => {
         <div>
         
         <div className="wrapper">
-       <Fade>
-        <div style={{opacity:"0.5"}}className="companies">
+       
+        <div style={{opacity:"0.8"}}className="companies">
             <div className="item"><img src={fedex} className="logo" /></div>
             <div className="item"><img src={carlsberg} className="logo" /></div>
             <div className="item"><img src={accenture} className="logo" /></div>
@@ -27,10 +27,10 @@ const Companies = () => {
             <div className="item"><img src={kodak} className="logo" /></div>
             <div className="item"><img src={gatorade} className="logo" /></div>
          </div>
-        </Fade>
+        
         <div className="rating">
             <strong>Trusted choice</strong> of Thousands of PM professionals
-            
+            <br/>
             <i class="star yellow icon" style={{marginLeft:"1rem"}}></i>
             <i class="star yellow icon"></i>
             <i class="star yellow icon"></i>

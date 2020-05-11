@@ -5,8 +5,8 @@ import Companies from "./Companies"
 const Home = ()=> {
     return(
         <div className="homepage">
-            <div style={{paddingTop:"8rem"}}className="text">
-            <p>A platform created to ease global trade<br/>
+            <div style={{paddingTop:"8rem",fontWeight:"550"}}className="text">
+            <p>A platform created to ease global trade.<br/>
                 We bridge every piece of global logistics puzzle.
             </p>
             </div>
@@ -16,7 +16,7 @@ const Home = ()=> {
                 TRANSPORT BY
                 </div>
                 <div class="ui white icon buttons">
-               <button class="ui white button"><i class="plane  icon"></i></button>
+               <button class="ui white button"><i class="plane large  icon"></i></button>
                <button class="ui white button"><i class="ship  icon"></i></button>
                <button class="ui  white button"><i class="shipping fast width  icon"></i></button>
                </div>
@@ -26,7 +26,7 @@ const Home = ()=> {
                 <div className="details">
                 ORIGIN OF SHIPMENT
                 </div>
-                <div class="ui left icon input">
+                <div class="ui left icon  input">
                 <input type="text" placeholder="Country,City,Port"/>
                 <i class="arrow alternate circle up icon"></i>
                 </div>
@@ -71,7 +71,7 @@ const Home = ()=> {
                 </div>
 
                   <div style={{paddingTop:"8rem"}} className="text second">
-            <p>IndiaPort is a technology coompany closely working on shipping lines and custom brokers 
+            <p>IndiaPort is a technology company closely working on shipping lines and custom brokers 
                 to provide you trouble free-trading.We at IndiaPort are commited to making it easier for the traders
                 to book transport, manage the shipment and solve problems in an organized and quick way.
             </p>
