@@ -7,7 +7,7 @@ import Slide from 'react-reveal/Slide'
 
 const InfoCard = () => {
     return(
-        <div className="cards">
+        <div className="cards" style={{marginBottom:"10rem"}}>
        
         <div className="heading">Simplify how you work</div>
         
