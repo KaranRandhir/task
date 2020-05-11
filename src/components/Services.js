@@ -6,9 +6,9 @@ const Services = () => {
     return (
         <div className="services">
         Our Services
-        
-        <div className="four" style={{marginTop:"2rem"}}>
-        <Service text="Accounting/Finance"/>
+        <div className="column">
+        <div className="four">
+        <Service text="Accounting/ Finance"/>
         <Service text="Custom Clearance"/>
         <Service text="Insurance"/>
         <Service text="Air Freight"/>
@@ -20,6 +20,7 @@ const Services = () => {
         <Service text="Education"/>
         <Service text="Tracking"/>
         <Service text="Customer Support"/>
+        </div>
         </div>
         </div>
     )

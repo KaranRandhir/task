@@ -21,3 +21,9 @@
 .service .text{
     font-weight: bold;
 }
+@media only screen and (max-width: 600px) {
+  .service {
+      width:40vw;
+      height: 30vh;
+  }
+  }

@@ -8,6 +8,10 @@
     
    
 }
+.pair {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%}
 li {
     list-style: none;
     margin-bottom: .3rem;
@@ -27,3 +31,20 @@ li {
 
 }
 
+@media only screen and (max-width: 600px) {
+    .footer{
+        flex-direction: column;
+    }
+    ul {
+        list-style: none;
+    }
+    .pair{
+        flex-direction: column;
+        
+    }
+    .element{
+        height:40vw;
+        width: 40vw;
+        text-align: center;
+    }
+  }

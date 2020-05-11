@@ -24,9 +24,16 @@
 @media only screen and (max-width: 600px) {
     .four {
         
-            display: flex ;
+            display: flex;
             flex-direction: column;
-            align-self: center;
-        
-    }
+}
+   .column{
+       display: flex;
+       flex-direction: row;
+       width: fit-content;
+       justify-content: space-evenly;
+   }
+   .services{
+       width: 100%
+   }
   }

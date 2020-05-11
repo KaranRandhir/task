@@ -1,3 +1,6 @@
+.homepage {
+    text-align: center;
+}
 .text {
     
     widows: 80%;
@@ -15,7 +18,7 @@
     margin-top: 6rem;
     padding:2rem 1rem;
     justify-content: center;
-    
+    width: fit-content;
     background:#d7ebf7;
 }
 .single{
@@ -41,10 +44,12 @@
     
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .inputs{
         display: flex;
         flex-direction: column;
+        width: 100%;
+        align-self: auto;
       
     }
   }
