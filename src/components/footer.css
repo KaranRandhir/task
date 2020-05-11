@@ -1,7 +1,6 @@
 .footer {
     background: #2730ab;
     color:whitesmoke;
-    
     padding:5rem;
     padding-bottom: .2rem;
     display:"flex";
@@ -55,12 +54,13 @@ li {
         height:40vw;
         width: 40vw;
         text-align: center;
+        align-self: center;
     }
     .abouts {
          
             display: flex;
             flex-direction: column;
-            
+           
            
         
     

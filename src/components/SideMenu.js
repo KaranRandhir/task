@@ -7,19 +7,19 @@ const SideMenu = ({width}) => {
         
          
         
-        <a  class="item">
+        <a  style={{fontSize:"1.5rem"}}class="item">
           Log in/Sign up
         </a>
-        <a class="item">
+        <a style={{fontSize:"1.5rem"}} class="item">
           Home
         </a>
-        <a class="item">
+        <a style={{fontSize:"1.5rem"}} class="item">
           Products
         </a>
-        <a class="item">
+        <a style={{fontSize:"1.5rem"}} class="item">
           Tools
         </a>
-        <a class="item">
+        <a style={{fontSize:"1.5rem"}} class="item">
           Support
         </a>
 

@@ -9,7 +9,7 @@ const InfoCard = () => {
     return(
         <div className="cards">
        
-        <div className="heading">Simplify how you <br/>work</div>
+        <div className="heading">Simplify how you work</div>
         
         <div className="row">
         <Slide left>
