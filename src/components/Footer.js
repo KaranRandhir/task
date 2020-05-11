@@ -2,7 +2,7 @@ import React from "react"
 import "./footer.css"
 const Footer = () => {
     return (
-        <div style={{background:"#2730ab",display:"flex",flexDirection:"column",textAlign:"center",marginTop:"5rem"}}>
+        <div style={{background:"#2730ab",display:"flex",flexDirection:"column",textAlign:"center",marginTop:"5rem",height:"auto"}}>
         <div className="footer">
             <div  className="abouts" >
            
@@ -12,7 +12,7 @@ const Footer = () => {
                     <li>How it Works</li>
                     <li>What we treat</li>
                     <li>Help us by Donating</li>
-                    <li></li>
+                    
                 </ul>
             </div>
             <div className="element">
@@ -21,7 +21,7 @@ const Footer = () => {
                     <li>For health Providers</li>
                     <li>About TeleAfya</li>
                     <li>Why TeleAfya</li>
-                    <li></li>
+                    
                 </ul>
             </div>
             <div className="element">
@@ -30,7 +30,7 @@ const Footer = () => {
                     <li>Mobile Healthcare </li>
                     <li>Mobile Urgentcare </li>
                     <li>Mobile Healthcare </li>
-                    <li></li>
+                   
                 </ul>
             </div>
             <div className="element">
@@ -39,7 +39,7 @@ const Footer = () => {
                     <li>Contact us</li>
                     <li>Privacy Policy</li>
                     <li>Terms of Service</li>
-                    <li></li>
+                    
                 </ul>
             </div>
             
@@ -51,7 +51,7 @@ const Footer = () => {
         <i class="instagram icon"></i>
         </div>
         <div style={{marginTop:"1.5rem",color:"grey"}}>
-        Ⓒ Copyright Ⓒ 2020, TeleAfya. All rights reserved
+        Ⓒ Copyright Ⓒ 2020, IndiaPort. All rights reserved
         </div>
       
         </div>

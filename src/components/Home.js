@@ -62,7 +62,7 @@ const Home = ()=> {
                 </div>
                 </div>
 
-                <div className="single" style={{marginLeft:"1.5rem"}}>
+                <div className="single blue" >
                 <br/>
                 <button className="ui primary button">
                 Search

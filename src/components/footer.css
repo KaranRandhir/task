@@ -46,23 +46,15 @@ li {
     ul {
         list-style: none;
     }
-    .pair{
-        flex-direction: column;
-        
-    }
+   
     .element{
         height:40vw;
         width: 40vw;
-        text-align: center;
-        align-self: center;
+        margin-top: 2rem;
+        margin-left: 0;
     }
     .abouts {
          
-            display: flex;
-            flex-direction: column;
-           
-           
-        
-    
-    }
+           display: block
+        }
   }
