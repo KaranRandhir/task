@@ -30,41 +30,48 @@ const InfoCard = () => {
         </div>
         
         <div style={{display:"flex", flexDirection:"column"}}>
-        <Fade left>
+
         <div className="odd" >
+        <Fade left>
         <span className="topic">MANAGE</span><br/>
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
         et dolore magna aliqua. Ut enim ad minim veniam,
          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-      
-        </div>
-        </Fade>
+         </Fade>
        
-        <Fade right>
+        </div>
+        
+        
         <div className="even">
+        <Fade right>
         <span className="topic">TRACK YOUR SHIPMENTS</span><br/>
         2 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
         et dolore magna aliqua. Ut enim ad minim veniam,
          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+         </Fade>
         </div>
-        </Fade>
         
-        <Fade left>
+        
+        
         <div className="odd">
+        <Fade left>
         <span className="topic">ONLINE DOCUMENTATION</span><br/>
         3 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
         et dolore magna aliqua. Ut enim ad minim veniam,
          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+         </Fade>
         </div>
-        </Fade>
-        <Fade right>
+        
+        
         <div className="even">
+        <Fade right>
         <span className="topic">TRANSPERENCY IN RATES</span><br/>
         4 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
         et dolore magna aliqua. Ut enim ad minim veniam,
          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        </div>
         </Fade>
+        </div>
+        
         </div>
         
         </div>

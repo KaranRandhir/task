@@ -34,6 +34,9 @@ li {
 }
 .element{
     display: flex;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
 
 }
 
@@ -55,10 +58,10 @@ li {
     }
     .abouts {
          
-            grid-template-columns: auto  ;
-            display: grid;
-            grid-gap: 20px;
-            column-gap: 0px;
+            display: flex;
+            flex-direction: column;
+            
+           
         
     
     }
