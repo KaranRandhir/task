@@ -5,6 +5,10 @@ import Home from "./Home"
 import InfoCard from "./InfoCard"
 import Services from "./Services"
 import Footer from "./Footer"
+import Percent from "./Percent"
+import Stats from "./Stats"
+
+
 class App extends React.PureComponent  {
     
     
@@ -18,10 +22,13 @@ class App extends React.PureComponent  {
 
                 <Home/>
                 <InfoCard/>
+               <Stats/>
                 <Services/>
                 
             </Container>
             <Footer/>
+
+
             </Navbar>
             </div>
 

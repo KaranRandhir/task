@@ -1,0 +1,48 @@
+
+.carousal {
+    display: flex;
+    position: relative;
+    background:white;
+    height: 45vh;
+    border:solid black 1px;
+    overflow-x: auto;
+    padding: 2vh;
+  
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    
+    
+    
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    
+
+}
+ 
+
+.carousal .cards {
+    width: 80%;
+    display: flex;
+    position: relative;
+    overflow-x: auto;
+    
+  
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    
+    
+    
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+.smallScreen{
+    display: none;
+}
+@media only screen and (max-width: 800px) {
+    .bigScreen{
+        display: none;
+    }
+    .smallScreen{
+        display: block;
+    }
+ }

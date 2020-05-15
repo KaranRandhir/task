@@ -3,7 +3,7 @@ import "./nav1.css"
 
 const SideMenu = ({width}) => {
     return (
-        <div style={{width:`${width}`,overflowX:"hidden",transition:".3s"}}class="ui sidebar visible  vertical menu">
+        <div style={{width:`${width}`,overflowX:"hidden",transition:".3s",zIndex:"1000"}}class="ui sidebar visible  vertical menu">
         
          
         

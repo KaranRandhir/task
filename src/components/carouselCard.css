@@ -1,0 +1,45 @@
+.carouselCard{
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    width:25vh;
+    height: 25vh;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 2vh ;
+    padding-top: 4vh;
+    border-radius: 7px;
+    border-top: #254cb8 3px solid;
+    text-align: center;
+    align-self: auto;
+    margin: auto
+    
+    
+}
+
+
+    .carouselCard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .png{
+    height:10vh;
+    width:10vh;
+    margin-bottom: 2vh;
+    
+}
+
+.carouselCard .service {
+    color:black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: .1rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+@media only screen and (max-width: 800px) {
+   .carouselCard{
+       width: 80%;
+   }
+}

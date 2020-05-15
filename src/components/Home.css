@@ -1,17 +1,24 @@
 .homepage {
     text-align: center;
+    background-color: #F1F7FF;
     
+   height: 98vh;
+  
 }
 .text {
     
     widows: 80%;
     text-align: center;
-    font-weight: 300;
-    font-family: 'Source Serif Pro', serif;
-    font-size:2.8rem;
-    color:rgb(121, 121, 121);
     
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.8rem;
+    color:#3d3d3d;
+   
 }
+.phone {
+    display: none
+}
+
 
 .inputs {
     display:flex;
@@ -20,15 +27,16 @@
     padding:2rem 1rem;
     justify-content: center;
     width: fit-content;
-    background:#d7ebf7;
+    background:#F1F7FF;
     margin: auto;
-    margin-top: 6rem;
+    margin-top: 0rem;
 }
 .single{
     display:flex;
     flex-direction: column;
-    color:#7ea6e6;
+    color:rgb(147, 147, 192);
     font-size: 1rem;
+    text-align: start;
     
 }
 
@@ -41,9 +49,10 @@
     align-self: center;
     justify-self: center;
     font-size: 1.5rem;
-    padding-left:4rem;
-    padding-right:4rem;
+    color: #3d3d3d;
     text-align: center;
+    width: 80%;
+    margin:auto;
     
 }
 .blue {
@@ -54,12 +63,38 @@
     .inputs{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 80%;
         align-self: auto;
+        align-items: "center";
+        justify-content: "center"
       
+    }
+    .text {
+        font-size: 2rem;
     }
     .blue{
         margin:0;
         width:auto;
     }
+  
+    .phone {
+        display: block;
+    }
+    .desktop {
+        display:none;
+    }
+    .animation {
+    display: none;
+    }
+    .homepage {
+       
+        
+       height: auto;
+      
+    }
+    .second{
+        font-size: 1.5rem;
+    }
   }
+
+ 

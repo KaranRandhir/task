@@ -9,7 +9,7 @@ const Nav1 = () => {
           INDIAPORT<br/>
           </div>
           <div className="tagline">
-          Simplifying Boundaries
+        
           </div>
         </div>
         <div className="menu right"> 

@@ -1,24 +1,28 @@
 .services{
-    background:#edf7fc;
-    
+   
     text-align: center;
-    font-family: 'Roboto', sans-serif;    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;    
+    font-size: 1.1rem;
     
-    display:flex;
-    flex-direction: column;
-    font-weight: bold;
-    align-items: center;
-    width: fit-content;
+    height: auto;
+    width: 80vw;
     margin: auto;
-    padding: .5rem;
+    margin-top: 5vh;
+    font-family: 'Source Serif Pro', serif;
 
-
-}
-.four{
-    display: flex ;
     
+
+}
+.services .title {
+    font-size: 3rem;
+    color:grey;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
 }
 
+.office {
+    width:50%;
+}
 @media only screen and (max-width: 600px) {
     .four {
         

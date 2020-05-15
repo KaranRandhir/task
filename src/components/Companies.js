@@ -19,7 +19,7 @@ const Companies = () => {
         
         <div className="wrapper">
        
-        <div style={{opacity:"0.8"}}className="companies">
+        <div className="companies">
             <div className="item"><img src={fedex} className="logo" /></div>
             <div className="item"><img src={carlsberg} className="logo" /></div>
             <div className="item"><img src={accenture} className="logo" /></div>
@@ -40,30 +40,7 @@ const Companies = () => {
         </div>
         
 
-        <div className="companies" style={{display:"flex",background:"#dfeaf2",marginTop:"2rem",justifyContent:"space-around",paddingBottom:".5rem"}}>
-            <div className="item">
-                <Pulse>
-                15%
-                </Pulse>
-                <div className="info">
-                    higher on-time-performance
-                </div>
-            </div><div className="item">
-            <Pulse>
-                15%
-                </Pulse>
-                <div className="info">
-                    lower administrative work
-                </div>
-            </div><div className="item">
-            <Pulse>
-                15%
-                </Pulse>
-                <div className="info">
-                    total transporation cost save
-                </div>
-            </div>
-        </div>
+       
         </div>
         
          

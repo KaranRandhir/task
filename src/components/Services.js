@@ -1,28 +1,20 @@
 import React from "react"
 import "./services.css"
-import Service from "./Service"
+import Card from "./Card"
+import office from "../assets/office.png"
+import CRL from "./Carousel"
 
 const Services = () => {
     return (
-        <div className="services">
-        Our Services
-        <div className="column">
-        <div className="four">
-        <Service text="Accounting/ Finance"/>
-        <Service text="Custom Clearance"/>
-        <Service text="Insurance"/>
-        <Service text="Air Freight"/>
-        <Service text="Sea Freigth"/>
-        </div>
-        <div className="four">
-        <Service text="Shipment Managment"/>
-        <Service text="Inland Transport"/>
-        <Service text="Education"/>
-        <Service text="Tracking"/>
-        <Service text="Customer Support"/>
-        </div>
-        </div>
-        </div>
+      <div className="services" >
+      
+      <div className="title">Our Services</div>
+     
+          
+         <CRL/>
+
+      
+      </div>
     )
 }
 
