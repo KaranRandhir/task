@@ -13,6 +13,8 @@ class Why extends React.Component{
         <div className="why">
         
         <div className="title">
+            Why Choose Us
+            <p style={{fontSize:"1rem",color:"grey",marginTop:"4vh"}}>We redefine supply chains through technology</p>
         </div>
 
         <div className="line">

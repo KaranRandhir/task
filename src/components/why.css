@@ -6,7 +6,7 @@
     text-align: left;
     font-size: 1.5rem;
     height: 50vh;
-    
+    text-align: center;
     margin: auto;
     margin-bottom: 20vh;
     margin-top: 10vh;
@@ -89,6 +89,14 @@
     list-style: disc;
     color: black;
     margin-left: 0;
+}
+.why .title {
+    font-size: 3rem;
+    color:grey;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    font-family: 'Source Serif Pro', serif;
+
 }
 @media only screen and (max-width: 800px) {
   .why  .line{
