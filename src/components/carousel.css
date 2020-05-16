@@ -3,9 +3,9 @@
     display: flex;
     position: relative;
     background:white;
-    height: 45vh;
+    height: 35vh;
     border:solid black 1px;
-    overflow-x: auto;
+   
     padding: 2vh;
   
     overflow-x: hidden;
@@ -44,5 +44,8 @@
     }
     .smallScreen{
         display: block;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        height: 40vh;
     }
  }
