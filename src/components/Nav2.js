@@ -12,7 +12,7 @@ const Nav2 = ({onPress}) => {
           INDIAPORT<br/>
           </div>
           <div className="tagline">
-          Simplifying Boundaries
+         
           </div>
         </div>
         <div className="right menu">
