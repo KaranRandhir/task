@@ -14,7 +14,7 @@ class Percent extends React.Component {
         <div>
         {this.state.visible?<Spring from ={{number:0}}
         to={{number:this.props.number}}
-        config={{duration:1800}}>
+        config={{duration:1400}}>
          {(props)=> props.number.toFixed()+"%"}
         </Spring>:"."}
         </div> 
