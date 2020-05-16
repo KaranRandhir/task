@@ -53,8 +53,10 @@
     text-align: left;
     transition: .8s;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     overflow-y: hidden;
+    border-right: 2px solid steelblue;
+    
 }
 .why .line .description
  .notVisible {
@@ -82,8 +84,27 @@
     padding: 0;
     
 }
+
 .description .unordered .listItem {
     list-style: disc;
     color: black;
     margin-left: 0;
 }
+@media only screen and (max-width: 800px) {
+  .why  .line{
+        flex-direction: column;
+    }
+    
+.why .line .options {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+   
+}
+.why .line .visible{
+    width: 80vw;
+    
+}
+.why {height: auto;}
+  
+  }
