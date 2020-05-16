@@ -1,7 +1,10 @@
+body {
+    overflow-x: hidden;
+}
 .homepage {
     text-align: center;
     background-color: #F1F7FF;
-    
+
    height: 98vh;
   
 }
