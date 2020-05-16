@@ -1,8 +1,8 @@
 .footer {
     background: #2730ab;
     color:whitesmoke;
-    padding:2rem;
-    padding-bottom: .2rem;
+    padding:3vh;
+    padding-bottom: 2vh;
     display:"flex";
     
    
@@ -31,7 +31,7 @@ li {
     justify-content: space-between;
     text-align: center;
 }
-.element{
+.elem{
     display: flex;
     text-align: center;
     align-self: center;
@@ -42,7 +42,9 @@ li {
 @media only screen and (max-width: 600px) {
     .footer{
         flex-direction: column;
-        padding:0
+        padding:0;
+        align-items: center;
+
     }
     ul {
         list-style: none;
@@ -52,11 +54,15 @@ li {
         height:40vw;
         width: 40vw;
         margin-top: 2rem;
-        margin-left: 0;
-        margin-right: 0px;
+        margin:auto
     }
     .abouts {
          
-           display: block
+           display: flex;
+           flex-direction: column;
+           margin: auto;
+           align-items: center;
+           margin-right: 9vh ;
+
         }
   }
