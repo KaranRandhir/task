@@ -1,0 +1,89 @@
+.why {
+    margin-top: 5vh;
+    width:80%;
+    display: flex;;
+    flex-direction: column;
+    text-align: left;
+    font-size: 1.5rem;
+    height: 50vh;
+    
+    margin: auto;
+    margin-bottom: 20vh;
+    margin-top: 10vh;
+}
+.why .line {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    border: 0;
+    padding: 0;
+    margin-bottom: 5vh;
+
+}
+
+.why .line .options {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    height:100%
+}
+
+
+.why .line .description
+ {  height: 50vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.why  .line .visible {
+  
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    width:30vw;
+    height: 30vh;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 2vh ;
+    border-radius: 7px;
+    margin: auto;
+    text-align: left;
+    transition: .8s;
+    justify-content: center;
+    font-size: 1.2rem;
+    overflow-y: hidden;
+}
+.why .line .description
+ .notVisible {
+    height: 0;
+    width: 0;
+    overflow-y: hidden;
+}
+.why .line .options .option{
+    height: 10vh;
+    border-bottom: 1px solid grey;
+    padding: auto;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+}
+.why .line .options .option:hover {
+    color:steelblue;
+    font-size: 1.7rem;
+    transition: .3s;
+    border-bottom: steelblue 1px solid;
+}
+
+.description .unordered{
+    margin-left: 2vw;
+    padding: 0;
+    
+}
+.description .unordered .listItem {
+    list-style: disc;
+    color: black;
+    margin-left: 0;
+}

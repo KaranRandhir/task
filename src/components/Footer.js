@@ -7,7 +7,7 @@ const Footer = () => {
             <div  className="abouts" >
            
             <div className="elem">
-                <ul>
+                <ul style={{marginLeft:"0",padding:"0"}}>
                     <li className="about">DISCOVER</li>
                     <li>How it Works</li>
                     <li>What we treat</li>
@@ -16,7 +16,7 @@ const Footer = () => {
                 </ul>
             </div>
             <div className="elem">
-                <ul>
+                <ul style={{marginLeft:"0",padding:"0"}}>
                     <li className="about">COMPANY</li>
                     <li>For health Providers</li>
                     <li>About TeleAfya</li>
@@ -25,7 +25,7 @@ const Footer = () => {
                 </ul>
             </div>
             <div className="elem">
-                <ul>
+                <ul style={{marginLeft:"0",padding:"0"}}>
                     <li className="about">PARTNER</li>
                     <li>Mobile Healthcare </li>
                     <li>Mobile Urgentcare </li>
@@ -34,7 +34,7 @@ const Footer = () => {
                 </ul>
             </div>
             <div className="elem">
-                <ul>
+                <ul style={{marginLeft:"0",padding:"0"}}>
                     <li className="about">SUPPORT</li>
                     <li>Contact us</li>
                     <li>Privacy Policy</li>

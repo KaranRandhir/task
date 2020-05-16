@@ -7,6 +7,8 @@ import Services from "./Services"
 import Footer from "./Footer"
 import Percent from "./Percent"
 import Stats from "./Stats"
+import Why from "./Why"
+
 
 
 class App extends React.PureComponent  {
@@ -26,6 +28,7 @@ class App extends React.PureComponent  {
                 <Services/>
                 
             </Container>
+            <Why/>
             <Footer/>
 
 
