@@ -1,6 +1,6 @@
 import React from "react"
 import "./why.css"
-import Zoom from "react-reveal/Zoom"
+import Fade from "react-reveal/Fade"
 
 class Why extends React.Component{
     
@@ -20,6 +20,7 @@ class Why extends React.Component{
         <div className="line">
             
             <div className="options">
+                <Fade left >
                 <div onClick={()=>this.setState({card1:"visible",card2:"notVisible",card3:"notVisible"})} className="option">
                 <i class="clock outline large icon"></i>Reliable and on time transports.
                 </div>
@@ -30,6 +31,7 @@ class Why extends React.Component{
                 <div  onClick={()=>this.setState({card1:"notVisible",card2:"notVisible",card3:"visible"})} className="option">
                 <i class="hourglass outline icon large"></i>  Efficient and effective workflows.
                 </div>   
+                </Fade>
                
             </div>
             
