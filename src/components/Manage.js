@@ -1,8 +1,10 @@
 import React from "react"
 import "./manage.css"
+import Fade from "react-reveal/Fade"
 const Manage = () => {
    return (
     <div className="features" style={{marginTop:"15vh",marginBottom:"15vh"}}>
+    <Fade left>
     <div className="feature odd">
     <div className="Name">
         Manage
@@ -13,7 +15,9 @@ const Manage = () => {
      Ut rutrum auctor lorem. Nulla in condimentum lacus. Fusce venenatis metus non orci lobortis pharetra.
     </div>
     </div>
+    </Fade>
     
+    <Fade right>
     <div className="feature even">
     <div className="Name">
         Track Your Shipment
@@ -24,7 +28,9 @@ const Manage = () => {
      Ut rutrum auctor lorem. Nulla in condimentum lacus. Fusce venenatis metus non orci lobortis pharetra.
     </div>
     </div>
+    </Fade>
 
+    <Fade left>
     <div className="feature odd">
     <div className="Name">
         Online Documentation 
@@ -35,7 +41,8 @@ const Manage = () => {
      Ut rutrum auctor lorem. Nulla in condimentum lacus. Fusce venenatis metus non orci lobortis pharetra.
     </div>
     </div>
-
+    </Fade>
+    <Fade right>
     <div className="feature even">
     <div className="Name">
         Transperency in dates
@@ -46,6 +53,7 @@ const Manage = () => {
      Ut rutrum auctor lorem. Nulla in condimentum lacus. Fusce venenatis metus non orci lobortis pharetra.
     </div>
     </div>
+    </Fade>
 </div>
    )
 }
