@@ -45,7 +45,7 @@ const Manage = () => {
     <Fade right>
     <div className="feature even">
     <div className="Name">
-        Transperency in dates
+        Transparency in rates
     </div>
     <div>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque malesuada justo a ante interdum, 
