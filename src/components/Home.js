@@ -53,9 +53,19 @@ class Home extends React.Component{
                         TRANSPORT BY
                         </div>
                         <div class="ui white icon buttons">
-                       <button style={{background:"white",height:"4rem"}} class="ui  large button"><i class="plane blue icon"></i></button>
-                       <button style={{background:"white"}} class="ui large  button"><i class="ship  blue icon"></i></button>
-                       <button style={{background:"white"}} class="ui large  button"><i class="shipping blue fast width  icon"></i></button>
+                       <button style={{background:"white",height:"auto"}} class="ui  large button"><i class="plane blue icon"></i>
+                       <div style={{fontSize:".6rem",marginTop:".5vh",color:"#95989c"}}>
+                       AIR
+                       </div>
+                       </button>
+                       <button style={{background:"white"}} class="ui large  button"><i class="ship  blue icon"></i>
+                       <div style={{fontSize:".6rem",marginTop:".5vh",color:"#95989c"}}>
+                       SEA
+                       </div></button>
+                       <button style={{background:"white"}} class="ui large  button"><i class="shipping blue fast width  icon"></i>
+                       <div style={{fontSize:".6rem",marginTop:".5vh",color:"#95989c"}}>
+                       LAND
+                       </div></button>
                        </div>
                         </div>
                         

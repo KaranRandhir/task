@@ -1,0 +1,40 @@
+.features {
+   
+    width:80%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Source Serif Pro', serif;
+    font: 1.2rem;
+    color: grey;
+}
+
+.feature {
+    width: 40vw;
+    
+}
+
+.even {
+    align-self: flex-end;
+}
+.features .feature .Name {
+    font-size: 1.5rem;
+    margin-bottom: 1vh;
+}
+@media only screen and (max-width: 600px) {
+    .features{
+        width: 90vw;
+
+        text-align: center;
+    }
+    .even {
+        align-self: center;
+    }
+    .odd {
+        align-self: center;
+    }
+    .feature{
+    width: 80vw;
+    }
+    
+}
