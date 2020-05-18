@@ -9,11 +9,26 @@
     color: grey;
 }
 
-.feature {
-    width: 40vw;
+.feature .text{
+    align-self: center;
+    width: 25vw;
+    font-size: 1rem;
+    text-align: left;
+    font-family: 'Source Serif Pro', serif;
+    color: grey;
     
 }
-
+.smallscreen{
+    display: none;
+}
+.feature {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+}
+.feature img {
+    height: 40vh;
+}
 .even {
     align-self: flex-end;
 }
@@ -27,14 +42,22 @@
 
         text-align: center;
     }
-    .even {
-        align-self: center;
-    }
-    .odd {
-        align-self: center;
-    }
-    .feature{
-    width: 80vw;
-    }
     
+    .feature{
+    width: 90vw;
+    flex-direction: column;
+    margin: auto;
+    
+    }
+    .feature .text {
+        margin-top: 2vh;
+        width: 80vw;
+        margin-bottom: 4vh;
+    }
+    .bigscreen {
+        display: none;
+    }
+    .smallscreen{
+        display: flex;
+    }
 }
