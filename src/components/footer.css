@@ -1,12 +1,17 @@
 .footer {
-    background: #2730ab;
-    color:whitesmoke;
+    border-top: solid 1px grey;
+    width: 100vw;
     padding:3vh;
     padding-bottom: 2vh;
     display:"flex";
+    position: relative;
     
     
    
+}
+.footer img {
+    margin-top: 8vh;
+    margin-bottom: 8vh;
 }
 .pair {
     display: flex;

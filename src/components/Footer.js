@@ -1,59 +1,24 @@
 import React from "react"
 import "./footer.css"
+import skyline from "../assets/skyline.png"
 const Footer = () => {
     return (
-        <div style={{background:"#2730ab",display:"flex",flexDirection:"column",textAlign:"center",marginTop:"5rem",height:"auto"}}>
+        <div style={{display:"flex",flexDirection:"column",textAlign:"center",marginTop:"5rem",height:"auto",position:"relative"}}>
+        <div style={{position:"absolute",fontSize:"2rem",top:"2vh",left:"2vw"}}>INDIAPORT
+        <br/><span style={{fontSize:"1rem",color:"green"}}>Simplifying Boundaries</span></div>
         <div className="footer">
-            <div  className="abouts" >
-           
-            <div className="elem">
-                <ul style={{marginLeft:"0",padding:"0"}}>
-                    <li className="about">DISCOVER</li>
-                    <li>How it Works</li>
-                    <li>What we treat</li>
-                    <li>Help us by Donating</li>
-                    
-                </ul>
-            </div>
-            <div className="elem">
-                <ul style={{marginLeft:"0",padding:"0"}}>
-                    <li className="about">COMPANY</li>
-                    <li>For health Providers</li>
-                    <li>About TeleAfya</li>
-                    <li>Why TeleAfya</li>
-                    
-                </ul>
-            </div>
-            <div className="elem">
-                <ul style={{marginLeft:"0",padding:"0"}}>
-                    <li className="about">PARTNER</li>
-                    <li>Mobile Healthcare </li>
-                    <li>Mobile Urgentcare </li>
-                    <li>Mobile Healthcare </li>
-                   
-                </ul>
-            </div>
-            <div className="elem">
-                <ul style={{marginLeft:"0",padding:"0"}}>
-                    <li className="about">SUPPORT</li>
-                    <li>Contact us</li>
-                    <li>Privacy Policy</li>
-                    <li>Terms of Service</li>
-                    
-                </ul>
-            </div>
-            
-         
-        </div>
+        
+          <img style={{height:"20vh"}}src={skyline}/>
         <div style={{marginTop:"1rem"}}>
-        <i class="twitter icon"></i>
-        <i class="facebook icon"></i>
-        <i class="instagram icon"></i>
+        <span style={{fontSize:"2rem"}}>India<br/></span>
+        406 B, Glitz Mall, Marine Lines,<br/>
+        Mumbai Maharashtra 40002
         </div>
-        <div style={{marginTop:"1.5rem",color:"grey"}}>
-        Ⓒ Copyright Ⓒ 2020, IndiaPort. All rights reserved
-        </div>
+        
       
+        </div>
+        <div style={{marginTop:"5vh",color:"grey",width:"100vw",textAlign:"right",paddingRight:"3vw",paddingBottom:"2vh"}}>
+        Ⓒ Copyright Ⓒ 2020, IndiaPort. All rights reserved
         </div>
        
         </div>
