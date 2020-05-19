@@ -5,6 +5,7 @@ import manage from "../assets/manage.svg"
 import navigation from "../assets/navigation.svg"
 import documentation from "../assets/documentation.svg"
 import rates from "../assets/rates.svg"
+import time from "../assets/time.svg"
 
 const Manage = () => {
    return (
@@ -81,7 +82,21 @@ const Manage = () => {
     </div>
     </div>
     </Fade>
-    <Fade right><img src={rates}/></Fade>
+    <Fade right><img src={rates}/></Fade></div>
+    <div className="feature">
+    <Fade left><img src={time}/></Fade>
+    <Fade right>
+    <div className="text">
+    <div className="Name">
+        Cost Effiecient and time saver
+    </div>
+    <div>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque malesuada justo a ante interdum, 
+    ut volutpat nunc tincidunt. Ut nisl eros, fermentum a leo quis, convallis feugiat mi.
+     Ut rutrum auctor lorem. Nulla in condimentum lacus. Fusce venenatis metus non orci lobortis pharetra.
+    </div>
+    </div>
+    </Fade>
     </div>
     </div>
     <div className="features smallscreen" style={{marginTop:"15vh",marginBottom:"15vh"}}>
@@ -143,6 +158,7 @@ const Manage = () => {
     
     
 
+    
     <div className="feature">
     <Fade right><img src={rates}/></Fade>
     <Fade left>
@@ -158,8 +174,30 @@ const Manage = () => {
     </div>
     </div>
     </Fade>
-    
     </div>
+
+       
+    <div className="feature">
+    <Fade right><img src={time}/></Fade>
+    <Fade left>
+    <div className="text">
+    <div className="Name">
+        Cost Effecient and time saver
+    </div>
+    <div>
+    >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque malesuada justo a ante interdum, 
+    ut volutpat nunc tincidunt. Ut nisl eros, fermentum a leo quis, convallis feugiat mi.
+     Ut rutrum auctor lorem. Nulla in condimentum lacus. Fusce venenatis metus non orci lobortis pharetra.
+    </div>
+    </div>
+    </Fade>
+    </div>
+
+
+    
+   
+    
     </div>
 
 </div>
