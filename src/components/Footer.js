@@ -8,7 +8,7 @@ const Footer = () => {
         <br/><span style={{fontSize:"1rem",color:"green"}}>Simplifying Boundaries</span></div>
         <div className="footer">
         
-          <img style={{height:"20vh"}}src={skyline}/>
+          <img src={skyline}/>
         <div style={{marginTop:"1rem"}}>
         <span style={{fontSize:"2rem"}}>India<br/></span>
         406 B, Glitz Mall, Marine Lines,<br/>

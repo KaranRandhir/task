@@ -12,6 +12,7 @@
 .footer img {
     margin-top: 8vh;
     margin-bottom: 8vh;
+    width: 40vw;
 }
 .pair {
     display: flex;
@@ -46,6 +47,10 @@ li {
 }
 
 @media only screen and (max-width: 600px) {
+    .footer .img {
+        width: 80vw;
+    }
+    
     .footer{
         flex-direction: column;
         padding:0;
