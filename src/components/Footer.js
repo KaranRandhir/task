@@ -2,7 +2,7 @@ import React from "react"
 import "./footer.css"
 const Footer = () => {
     return (
-        <div style={{background:"#2730ab",display:"flex",flexDirection:"column",textAlign:"center",marginTop:"5rem",height:"auto"}}>
+        <div style={{background:"black",display:"flex",flexDirection:"column",textAlign:"center",marginTop:"5rem",height:"auto"}}>
         <div className="footer">
             <div  className="abouts" >
            
