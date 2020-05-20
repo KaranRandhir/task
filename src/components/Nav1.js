@@ -16,15 +16,43 @@ const Nav1 = () => {
         <a className="item light">
           Home.
         </a>
-        <a className="item light">
-          Products.
-        </a>
-        <a className="item light ">
-          Tools.
-        </a>
-        <a className="item light">
-          Support.
-        </a>
+        <div class="ui simple dropdown item light">
+    Services.
+   
+    <div class="menu">
+      <div class="item">Frieght Forwarding</div>
+      <div class="item">Custom Clearance</div>
+      <div class="item">Insurance</div>
+    </div>
+    </div>
+    <div class="ui simple dropdown item light">
+    Tools.
+   
+    <div class="menu">
+      <div class="item">Shipping Documents</div>
+      <div class="item">Container Tracking</div>
+     </div>
+    </div>
+    <div class="ui simple dropdown item light">
+    Calculator.
+   
+    <div class="menu">
+      <div class="item">Duty Calculator</div>
+      <div class="item">CBM Calculator</div>
+      
+    </div>
+    </div>
+    <div class="ui simple dropdown item light">
+    Others.
+   
+    <div class="menu">
+      <div class="item">Blog</div>
+      <div class="item">Education</div>
+      <div class="item">Privacy</div>
+      <div class="item">Terms</div>
+    </div>
+    </div>
+      
         <a className="item login light">
           Log in/Sign up.
         </a>

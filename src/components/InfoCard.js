@@ -30,9 +30,7 @@ const InfoCard = () => {
         complete visibility every step of the way." number={4}/>
         </Slide>
         </div>
-       
-       
-        </div>
+       </div>
     )
 }
 
