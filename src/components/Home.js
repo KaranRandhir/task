@@ -5,7 +5,7 @@ import Zoom from "react-reveal"
 import Particles from "react-particles-js"
 class Home extends React.Component{
     
-    state={heading:"FIND THE BEST FREIGHT QUOTE",text:"Shipping to and from anywhere",freight:"primary",container:"basic",freightSearch:"block",containerSearch:"none"}
+    state={heading:"A PLATFORM CREATED TO EASE GLOBAL TRADE",text:"Shipping to and from anywhere",freight:"primary",container:"basic",freightSearch:"block",containerSearch:"none"}
   
     render() {
         return (
@@ -31,14 +31,14 @@ class Home extends React.Component{
                    
                     <div className="desktop">
                     <div style={{marginTop:"4rem"}} class="ui desktop buttons">
-                    <button onClick={()=>this.setState({heading:"FIND THE BEST FREIGHT QUOTE",freight:"primary",container:"basic",text:"Shipping to and from anywhere",freightSearch:"block",containerSearch:"none"})} style={{zIndex:"999",width:"15rem",borderTopLeftRadius:"16px",borderBottomLeftRadius:"16px"}}class={`ui blue ${this.state.freight} button`}>Freight Quotes</button>
+                    <button onClick={()=>this.setState({heading:"A PLATFORM CREATED TO EASE GLOBAL TRADE",freight:"primary",container:"basic",text:"Shipping to and from anywhere",freightSearch:"block",containerSearch:"none"})} style={{zIndex:"999",width:"15rem",borderTopLeftRadius:"16px",borderBottomLeftRadius:"16px"}}class={`ui blue ${this.state.freight} button`}>Freight Quotes</button>
                     <button onClick={()=>this.setState({heading:"TRACK A SHIPMENT",freight:"basic",container:"primary",text:"Check Shipment delivery status online",freightSearch:"none",containerSearch:"block"})}style={{zIndex:"999",width:"15rem",borderBottomRightRadius:"16px",borderTopRightRadius:"16px"}}class={`ui blue ${this.state.container} button`}>Container Tracking</button>
                     </div>
                     </div>
 
                     <div className="phone">                   
                     <div style={{marginTop:"4rem"}} class="ui vertical buttons">
-                    <button onClick={()=>this.setState({heading:"FIND THE BEST FREIGHT QUOTE",freight:"primary",container:"basic",text:"Shipping to and from anywhere",freightSearch:"block",containerSearch:"none"})} style={{zIndex:"999",width:"15rem",borderRadius:"16px"}}class={`ui blue ${this.state.freight} button`}>Freight Quotes</button>
+                    <button onClick={()=>this.setState({heading:"A PLATFORM CREATED TO EASE GLOBAL TRADE",freight:"primary",container:"basic",text:"Shipping to and from anywhere",freightSearch:"block",containerSearch:"none"})} style={{zIndex:"999",width:"15rem",borderRadius:"16px"}}class={`ui blue ${this.state.freight} button`}>Freight Quotes</button>
                     <div style={{height:".5rem"}}></div>
                     <button onClick={()=>this.setState({heading:"TRACK A SHIPMENT",freight:"basic",container:"primary",text:"Check Shipment delivery status online",freightSearch:"none",containerSearch:"block"})}style={{zIndex:"999",width:"15rem",borderRadius:"16px"}}class={`ui blue ${this.state.container} button`}>Container Tracking</button>
                     </div>

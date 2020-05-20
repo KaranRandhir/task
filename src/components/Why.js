@@ -41,16 +41,24 @@ class Why extends React.Component{
                    <ul className="unordered">
                        <li className="listItem">Real time tracking and live updates</li>
                        <li className="listItem">Proactive approach in case of delays</li>
-                       <li className="listItem">everything in oneplace with online document management</li>
+                       <li className="listItem">All documents in just one single form.</li>
                     </ul>
                 </div>
                 
                 <div className={`${this.state.card2}`}>
-                    hello2
+                <ul className="unordered">
+                       <li className="listItem">More actionable data.</li>
+                       <li className="listItem">Dicovering new targeted marketing opportunities.</li>
+                       <li className="listItem">Meaningful business and element of trust.</li>
+                    </ul>
                 </div>
 
                 <div className={` ${this.state.card3}`}>
-                    hello3
+                <ul className="unordered">
+                       <li className="listItem">Track request status in real time.</li>
+                       <li className="listItem">Drastically reduce paperwork and related cost and waste.</li>
+                       <li className="listItem">24/7 access to approve and monitor requests and task.</li>
+                    </ul>
                 </div>
 
             </div>
