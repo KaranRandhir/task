@@ -58,7 +58,19 @@
    font-weight: 400;
    
 }
+.aboutpage .row {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+}
 
+.aboutpage .text1 {
+    color: grey;
+    width: 20vw;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
 @media only screen and (max-width: 800px) {
 .aboutpage{
     width: 93vw;
