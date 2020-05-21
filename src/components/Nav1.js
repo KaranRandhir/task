@@ -1,6 +1,8 @@
 import React from "react"
 import "./nav1.css"
 
+import { BrowserRouter as Router,Route,Link } from "react-router-dom"
+
 const Nav1 = () => {
     return (
         <div class="ui borderless  menu">
@@ -14,8 +16,18 @@ const Nav1 = () => {
         </div>
         <div className="menu right"> 
         <a className="item light">
-          Home.
+      
+      <Link style={{color:"black",height:"100%",paddingTop:"40%"}} to="/">
+       Home.
+       </Link>
+     </a>
+        <a className="item light">
+      
+         <Link style={{color:"black",height:"100%",paddingTop:"40%"}} to="/about">
+          About.
+          </Link>
         </a>
+      
         <div class="ui simple dropdown item light">
     Services.
    

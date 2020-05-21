@@ -1,14 +1,8 @@
 import React from "react"
+import HomePage from "./HomePage"
+import AboutPage from "./AboutPage"
 import Navbar from "./Navbar"
-import Container from "./Container"
-import Home from "./Home"
-import InfoCard from "./InfoCard"
-import Services from "./Services"
-import Footer from "./Footer"
-import Percent from "./Percent"
-import Stats from "./Stats"
-import Why from "./Why"
-import Manage from "./Manage"
+import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
 
 
 class App extends React.PureComponent  {
@@ -17,29 +11,19 @@ class App extends React.PureComponent  {
     render() {
     return(
         <div>
-            
-            <Navbar>
-            
-            <Container>
-
-                <Home/>
-                <InfoCard/>
-               <Stats/>
-                <Services/>
-                <Manage/>
-                
-            </Container>
-            <Why/>
-            <Footer/>
-
-
-            </Navbar>
-            </div>
-
-
-            
       
-    ) }
+            
+            <Router>
+            <Navbar>
+            <Switch>
+            <Route exact path="/"  component={HomePage} />
+            <Route path="/about" component={AboutPage}/>
+            </Switch>
+            </Navbar>
+            </Router>
+           
+        </div>
+        ) }
 }
 
 export default App;
