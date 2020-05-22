@@ -20,18 +20,14 @@ const Nav1 = () => {
           </div>
         </div>
         <div className="menu right"> 
-        <a className="item light">
       
-      <Link style={{color:"black",height:"100%",paddingTop:"40%"}} to="/">
+      <Link  className="item light"to="/">
        Home.
        </Link>
-     </a>
-        <a className="item light">
-      
-         <Link style={{color:"black",height:"100%",paddingTop:"40%"}} to="/about">
-          About.
-          </Link>
-        </a>
+       <Link  className="item light"to="/about">
+       About.
+       </Link>
+       
       
         <div class="ui simple dropdown item light">
     Services.

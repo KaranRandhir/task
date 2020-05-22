@@ -1,12 +1,13 @@
 .menu .header .title {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    font-family: 'Caladea', serif;
 
 
 }
 
 .menu .company .crane {
-    height: 4.5rem;
+    height: 3.5rem;
 }
 .menu .header .tagline {
     color: steelblue;
@@ -17,18 +18,19 @@
     font-family: 'Source Serif Pro', serif;
 }
 .company .title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 300;
     margin-bottom: .2rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     display: flex;
+    font-family: 'Caladea', serif;
 
 }
 
 .company .tagline {
     font-weight: 550;
-    font-size: 1.4rem;
+    font-size: 1rem;
     color: steelblue;
 }
 
