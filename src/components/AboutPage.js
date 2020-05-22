@@ -26,11 +26,11 @@ class AboutPage extends React.Component {
                             <div className="list">
                                 <ul>
                                     <li className='topic'>Updates</li>
-                                    <li>Online freight marketplace</li>
-                                    <li>Custom clearance </li>
-                                    <li>Local transport</li>
-                                    <li>Break and Bulk cargo</li>
-                                    <li>Insurance</li>
+                                    <li>Education</li>
+                                    <li>Blogs</li>
+                                    <li>News</li>
+                                    <li>Vessel Schedule</li>
+                                  
                                 </ul>
                             </div>
 
