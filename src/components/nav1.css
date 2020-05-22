@@ -4,6 +4,10 @@
 
 
 }
+
+.menu .company .crane {
+    height: 4.5rem;
+}
 .menu .header .tagline {
     color: steelblue;
 }
@@ -18,6 +22,8 @@
     margin-bottom: .2rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    display: flex;
+
 }
 
 .company .tagline {
