@@ -49,9 +49,7 @@
     .row {
         display:flex;
         flex-direction: column;
-        
-       
-      border-top:0;
+        border-top:0;
         
     }
 

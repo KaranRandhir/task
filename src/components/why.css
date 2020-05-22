@@ -98,7 +98,7 @@
     font-family: 'Source Serif Pro', serif;
 
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
   .why  .line{
         flex-direction: column;
     }
