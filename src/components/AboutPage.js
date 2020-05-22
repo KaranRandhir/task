@@ -87,15 +87,16 @@ class AboutPage extends React.Component {
                 <div className="heading">
                     Hi There !
                 </div>
-                    <div className="row">
+                    <div className="rowimg">
                     <div className="text1">
                         We are a team of professionals from Ukraine who believe in the power of collaboration, 
                         research, shaking old ways and patterns. We love working with good 
                         people on their amazing projects to help them rise sales,
                         achieve new business opportunities and succeed in their fields.
                         </div>
-                        <img src={work} style={{height:"50vh",marginLeft:"10vw"}}/>
+                        <img src={work} style={{height:"50vh"}}/>
                     </div>
+
             </div>
 
         )

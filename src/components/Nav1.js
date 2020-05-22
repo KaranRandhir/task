@@ -8,10 +8,10 @@ const Nav1 = () => {
         <div class="ui borderless  menu">
         <div class="header item company">
           <div className="title">
-          INDIAPORT<br/>
+          IndiaPort<br/>
           </div>
           <div className="tagline">
-          Simplifying boundaries
+          Simplifying Boundaries
           </div>
         </div>
         <div className="menu right"> 

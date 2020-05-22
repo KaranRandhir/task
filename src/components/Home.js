@@ -20,7 +20,7 @@ class Home extends React.Component{
                         }}}/>
                         </div>
 
-                    <div style={{marginTop:"0",fontWeight:"600",paddingTop:"3rem"}} className="text">
+                    <div style={{marginTop:"0",fontWeight:"500",paddingTop:"3rem"}} className="text">
                    
                     <Zoom >  <p style={{fontWeight:"600",display:`${this.state.freightSearch}`}}>{this.state.heading}<br/>
                       </p> </Zoom>

@@ -66,10 +66,16 @@
 }
 
 .aboutpage .text1 {
+    align-self: center;
     color: grey;
     width: 20vw;
     font-size: 1.2rem;
     line-height: 2rem;
+}
+.aboutpage .rowimg {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
 }
 @media only screen and (max-width: 800px) {
 .aboutpage{

@@ -4,12 +4,12 @@ import "./nav1.css"
 
 const Nav2 = ({onPress}) => {
     return (
-        <div class="ui borderless  menu">
+        <div class="ui borderless menu">
        
         <div class="header item company">
           
           <div className="title">
-          INDIAPORT<br/>
+          IndiaPort<br/>
           </div>
           <div className="tagline">
           Simplifying Boundaries
