@@ -1,5 +1,6 @@
 import React from "react"
 import "./nav1.css"
+import { Link } from "react-router-dom";
 
 const SideMenu = ({width}) => {
     return (
@@ -10,18 +11,25 @@ const SideMenu = ({width}) => {
         <a  style={{fontSize:"1.5rem"}}class="item">
           Log in
         </a>
-        <a style={{fontSize:"1.5rem"}} class="item">
+        <Link to="/"style={{fontSize:"1.5rem"}} class="item">
           Home
-        </a>
+        </Link>
+        <Link to="/about"style={{fontSize:"1.5rem"}} class="item">
+          About
+        </Link>
         <a style={{fontSize:"1.5rem"}} class="item">
-          Products
+          Services
         </a>
         <a style={{fontSize:"1.5rem"}} class="item">
           Tools
         </a>
         <a style={{fontSize:"1.5rem"}} class="item">
-          Support
+          Calculators
         </a>
+        <a style={{fontSize:"1.5rem"}} class="item">
+          Others
+        </a>
+
 
       </div>
       

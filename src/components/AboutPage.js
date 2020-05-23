@@ -77,15 +77,10 @@ class AboutPage extends React.Component {
                         </div>
                     </div>
                 </div>
+            
+             
                 <div className="heading">
-                    Meet The Team
-                </div>
-                <div className='row'>
-                <img src={team} style={{height:"40vh"}}/>
-                
-                </div>
-                <div className="heading">
-                    Hi There !
+                    Hi There!
                 </div>
                     <div className="rowimg">
                     <div className="text1">
@@ -94,7 +89,7 @@ class AboutPage extends React.Component {
                         people on their amazing projects to help them rise sales,
                         achieve new business opportunities and succeed in their fields.
                         </div>
-                        <img src={work} style={{height:"50vh"}}/>
+                        <img src={work} style={{height:"40vh"}}/>
                     </div>
 
             </div>

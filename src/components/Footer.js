@@ -8,37 +8,38 @@ const Footer = () => {
            
             <div className="elem">
                 <ul style={{marginLeft:"0",padding:"0"}}>
-                    <li className="about">DISCOVER</li>
-                    <li>How it Works</li>
-                    <li>What we treat</li>
-                    <li>Help us by Donating</li>
+                    <li className="about">IndiaPort</li>
+                    <li>Frieght Rates</li>
+                    <li>Shipping Documents</li>
+                    <li>Container Tracking</li>
                     
                 </ul>
             </div>
             <div className="elem">
                 <ul style={{marginLeft:"0",padding:"0"}}>
                     <li className="about">COMPANY</li>
-                    <li>For health Providers</li>
-                    <li>About TeleAfya</li>
-                    <li>Why TeleAfya</li>
+                    <li>Customer Support</li>
+                    <li>FAQs</li>
+                    <li>Contact</li>
                     
                 </ul>
             </div>
             <div className="elem">
                 <ul style={{marginLeft:"0",padding:"0"}}>
-                    <li className="about">PARTNER</li>
-                    <li>Mobile Healthcare </li>
-                    <li>Mobile Urgentcare </li>
-                    <li>Mobile Healthcare </li>
+                    <li className="about">Services</li>
+                    <li>FCL Freight </li>
+                    <li>LCL Freight </li>
+                    <li>Air Freight </li>
+                  
                    
                 </ul>
             </div>
             <div className="elem">
                 <ul style={{marginLeft:"0",padding:"0"}}>
-                    <li className="about">SUPPORT</li>
-                    <li>Contact us</li>
-                    <li>Privacy Policy</li>
-                    <li>Terms of Service</li>
+                    <li className="about">Learn</li>
+                    <li>Education</li>
+                    <li>News</li>
+                    <li>Blogs</li>
                     
                 </ul>
             </div>
