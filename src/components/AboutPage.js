@@ -3,9 +3,12 @@ import "./aboutpage.css"
 import team from "../assets/team.svg"
 import work from "../assets/work.svg"
 import team2 from "../assets/team2.svg"
+import skyline from "../assets/skyline.png"
+import crane from "../assets/crane.png"
 class AboutPage extends React.Component {
     render(){
         return(
+            
             <div className="aboutpage">
                 <div className="heading">
                     We are tech start-up powered to <br/>
@@ -77,20 +80,37 @@ class AboutPage extends React.Component {
                         </div>
                     </div>
                 </div>
-            
-             
-                <div className="heading">
-                    Hi There!
+
+                <div className="aboutfooter">
+                 <div className="indiaport">
+                 <div style={{display:"flex"}}>
+        <img style={{width:"3.5rem"}} src={crane} className="crane"/>
+          <div style={{marginLeft:".5vw"}}>
+          <div className="title">
+          IndiaPort<br/>
+          </div>
+          <div className="tagline">
+          Simplifying Boundaries
+          </div>
+          </div>
+          </div>
+                 </div>
+                 <div style={{position:"absolute",bottom:"0",right:"0"}}>
+                    Privacy ©️ 2020 Indiaport
                 </div>
-                    <div className="rowimg">
-                    <div className="text1">
-                        We are a team of professionals from Ukraine who believe in the power of collaboration, 
-                        research, shaking old ways and patterns. We love working with good 
-                        people on their amazing projects to help them rise sales,
-                        achieve new business opportunities and succeed in their fields.
-                        </div>
-                        <img src={work} style={{height:"40vh"}}/>
-                    </div>
+                 <div>
+                 <img src={skyline}/>
+                </div>
+                <div style={{marginTop:"5vh"}} className="title">
+                  India
+                </div>
+                <div style={{marginTop:"3vh"}} className="adress">
+                    406 B, Glitz Mall, Marine Line,<br/>
+                    Mumabai, Maharashtra 400002
+                </div>
+                </div>
+               
+                
 
             </div>
 
