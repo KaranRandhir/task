@@ -78,7 +78,7 @@
     margin-top: 10vh;
 }
 .aboutfooter {
-    border-top: 10px grey double;
+    border-top: 3px grey solid;
     height: 100vh;
     position: relative;
     display: flex;
