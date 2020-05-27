@@ -8,7 +8,7 @@ const SideMenu = ({width}) => {
         
          
         
-        <a  style={{fontSize:"1.5rem"}}class="item">
+        <a href="http://indiaport.in/admin/login.php" style={{fontSize:"1.5rem"}}class="item">
           Log in
         </a>
         <Link to="/"style={{fontSize:"1.5rem"}} class="item">
@@ -23,7 +23,7 @@ const SideMenu = ({width}) => {
         <a style={{fontSize:"1.5rem"}} class="item">
           Tools
         </a>
-        <a style={{fontSize:"1.5rem"}} class="item">
+        <a  style={{fontSize:"1.5rem"}} class="item">
           Calculators
         </a>
         <a style={{fontSize:"1.5rem"}} class="item">
