@@ -67,7 +67,7 @@ const Nav1 = () => {
     </div>
       
         <a href="http://indiaport.in/admin/login.php" className="item login light">
-          Log in
+          Log in/Signup.
         </a>
       </div>
       </div>
