@@ -8,7 +8,7 @@ const Nav1 = () => {
         <div class="ui borderless  menu">
         <div class="header item company">
         <div style={{display:"flex"}}>
-        <img src={crane} className="crane"/>
+        <img src={crane} className="crane" alt="crane"/>
           <div style={{marginLeft:".5vw"}}>
           <div className="title">
           IndiaPort<br/>
@@ -66,7 +66,7 @@ const Nav1 = () => {
     </div>
     </div>
       
-        <a className="item login light">
+        <a href="http://indiaport.in/admin/login.php" className="item login light">
           Log in/Sign up.
         </a>
       </div>
