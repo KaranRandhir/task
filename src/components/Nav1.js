@@ -50,8 +50,8 @@ const Nav1 = () => {
     Calculator.
    
     <div class="menu">
-      <div class="item">Duty Calculator</div>
-      <div class="item">CBM Calculator</div>
+      <Link to="/cbm" class="item">Duty Calculator</Link>
+      <Link to="/cbm" class="item">CBM Calculator</Link>
       
     </div>
     </div>
