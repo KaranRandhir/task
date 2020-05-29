@@ -28,7 +28,20 @@ const Cbm = () => {
 
   return (
     <React.Fragment>
-      <div>
+      <div className="content-container">
+        <div className="calculator-content">
+          <div>
+            <div className="calculator-content__heading">
+              Cubic Metre Calculator
+              </div>
+        This CBM calculator for shipping is a simple tool that helps you
+determine the volume and weight of your consignment.
+This helps you plan your transport: all you have to do is input the
+dimensions and weight of the cube you’re shipping, and our
+calculator will tell you how many cartons of this size will fit in a standard
+containers
+</div>
+        </div>
         <img src={calculator} alt="calculator" className="cbmimage"/>
       </div>
       <div className="cbmCalculator">

@@ -11,13 +11,38 @@
   background-color: #F1F7FF;
   border-radius: 5px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  
-
-
+  }
+.calculator-content{
+  width: 40%;
+  font-size: x-large;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  color:grey;
+  text-align: center;
+  line-height: 2rem;
+}
+.calculator-content__heading{
+  font-size: 3.4rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 5rem;
+  line-height: 4rem;
+}
+.content-container {
+  display: flex;
+  width: 90vw;
+  margin: auto;
+  justify-content: space-between;
 }
 .total-cbm{
   align-self: center;
   font-weight: 800;
+}
+.cbmimage {
+  width: 50%;
 }
 @media only screen and (max-width: 800px) {
     
