@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import calculator from "../assets/calculator.svg"
 import "./Cbm.css";
 const Cbm = () => {
   const [length, setlength] = useState("");
@@ -17,15 +17,16 @@ const Cbm = () => {
     }
   }
   return (
-      
+    <div>
     <div className="cbmCalculatorContainer">
-      <div style={{ fontSize: "3rem" }}>CBM Calculator</div>
+    
       <div className="cbmCalculator">
+      <div className="cbm-heading">CBM Calculator</div>
         <div className="select-options">
           <div class="ui labeled input">
             <div class="ui label">Unit</div>
             <select
-              class="ui compact selection dropdown"
+              class="ui compact large selection dropdown"
               onChange={(e) => changeUnit(e.target.value)}
             >
               <option selected="true" value="cm">
@@ -36,7 +37,7 @@ const Cbm = () => {
           </div>
         </div>
 
-        <div class="ui labeled input">
+        <div class="ui large labeled input">
           <div class="ui label">Length</div>
           <input
             type="number"
@@ -45,7 +46,7 @@ const Cbm = () => {
           />
         </div>
 
-        <div class="ui labeled input">
+        <div class="ui large labeled input">
           <div class="ui label">Breadth</div>
           <input
             type="number"
@@ -54,7 +55,7 @@ const Cbm = () => {
           />
         </div>
 
-        <div class="ui labeled input">
+        <div class="ui large labeled input">
           <div class="ui label">Height</div>
           <input
             type="number"
@@ -63,7 +64,7 @@ const Cbm = () => {
           />
           </div>
 
-          <button onClick={()=>calculate()} class="ui primary button">
+          <button onClick={()=>calculate()} class="ui primary large button">
             Calculate
         </button>
         <div>
@@ -72,6 +73,7 @@ const Cbm = () => {
        
       </div>
 
+    </div>
     </div>
   );
 };

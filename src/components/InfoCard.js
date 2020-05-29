@@ -22,7 +22,7 @@ const InfoCard = () => {
         <Card img={quote} title="Confirm a quick quote" content="Enter the details of your shipment to get a 
         real time, garanteed price from anywhere to everywhere." number={1}/>
         <Card img={confirm} title="Confirm a booking"  content="Verify details of your quote and confirm your booking
-        by providing special handling instructions, customization of services required if applicable "  number={2}/>
+        by providing special handling instructions. "  number={2}/>
         </Slide>
         <Slide right>
         <Card img={payment} title="Make payment"  content="Complete yor payment online by credit/debit card." number={3}/>
