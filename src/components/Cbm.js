@@ -13,7 +13,7 @@ const Cbm = () => {
         changeResult(<div style={{color:"red"}}>All Feilds are compulsary</div>)
         }
     else{
-    changeResult(<div>Volume is {length*breadth*height} {unit}<sup>3</sup></div>)
+    changeResult(<div style={{fontSize:"1.4rem"}}>Volume is {length*breadth*height} {unit}<sup>3</sup></div>)
     }
   }
   return (
