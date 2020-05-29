@@ -1,34 +1,24 @@
 .cbmCalculator{
-  width: 40vw;
-  height: 60vh;
+  width: 90vw;
+  height: 50vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  position: relative;
   justify-content: space-evenly;
   min-width: fit-content;
- 
-}
-.cbm-heading {
-  font-size: 3rem;
-  font-family: 'Roboto', sans-serif;
-  margin-bottom: 1rem;
-}
-.cbmCalculatorContainer {
-    background-color:#bad6e6;
-    width: 40vw;
-    margin: auto;
-    min-width: fit-content;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    top: 10vh;
-    justify-content: center;
-    height: 70vh;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
+  margin:auto;
+  min-height: fit-content;
+  background-color: #F1F7FF;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  
 
+
+}
+.total-cbm{
+  align-self: center;
+  font-weight: 800;
+}
 @media only screen and (max-width: 800px) {
     
   .cbmCalculator{

@@ -15,7 +15,7 @@ const CbmRow = (props) => {
             {props.show?<div>
             Length
             </div>:null}
-        <div class="ui input">
+        <div class="ui large input">
             <input 
             type="text" 
             placeholder="Length"
@@ -31,7 +31,7 @@ const CbmRow = (props) => {
         {props.show?<div>
             Breadth
             </div>:null}
-        <div class="ui input">
+        <div class="ui large input">
             <input 
             type="text" 
             placeholder="Breadth"
@@ -47,7 +47,7 @@ const CbmRow = (props) => {
         {props.show?<div>
             Height
             </div>:null}
-        <div class="ui input">
+        <div class="ui large input">
             <input 
             type="text" 
             placeholder="Height"
@@ -64,7 +64,7 @@ const CbmRow = (props) => {
         {props.show?<div>
             Cbm
             </div>:null}
-        <div class="ui disabled input">
+        <div class="ui disabled large input">
             <input type="text"
              placeholder="CBM"
              value={length*breadth*height}/>
