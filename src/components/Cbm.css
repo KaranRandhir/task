@@ -11,6 +11,7 @@
 .cbm-heading {
   font-size: 3rem;
   font-family: 'Roboto', sans-serif;
+  margin-bottom: 1rem;
 }
 .cbmCalculatorContainer {
     background-color:#bad6e6;
