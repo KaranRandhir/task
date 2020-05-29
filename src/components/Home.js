@@ -111,7 +111,7 @@ class Home extends React.Component{
         
                         <div className="single  blue" >
                         <br/>
-                        <button onClick={()=>alert("coming soon")} className="search"style={{height:"4rem",fontSize:"1.5",fontWeight:"300",width:"180px",margin:"auto"}}className="ui blue big button">
+                        <button onClick={()=>alert("Login to use search")} className="search"style={{height:"4rem",fontSize:"1.5",fontWeight:"300",width:"180px",margin:"auto"}}className="ui blue big button">
                         SEARCH
                         </button>
                         </div>
