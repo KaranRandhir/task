@@ -22,9 +22,9 @@ class Home extends React.Component{
 
                     <div style={{marginTop:"0",fontWeight:"500",paddingTop:"3rem"}} className="text">
                    
-                    <Zoom >  <p style={{fontWeight:"600",width:"80vw",display:`${this.state.freightSearch}`}}>{this.state.heading}<br/>
+                    <Zoom >  <p style={{fontWeight:"600",display:`${this.state.freightSearch}`}}>{this.state.heading}<br/>
                       </p> </Zoom>
-                      <Zoom >  <p style={{fontWeight:"600",width:"80vw",display:`${this.state.containerSearch}`}}>{this.state.heading}<br/>
+                      <Zoom >  <p style={{fontWeight:"600",display:`${this.state.containerSearch}`}}>{this.state.heading}<br/>
                       </p> </Zoom>
                       <div style={{fontSize:"1.5rem"}}>{this.state.text}</div>
                     </div>
