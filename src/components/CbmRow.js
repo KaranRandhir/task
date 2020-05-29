@@ -1,5 +1,6 @@
 import React,{useState} from "react"
 import "./CbmRow.css"
+
  
 const CbmRow = (props) => {
     
@@ -17,7 +18,7 @@ const CbmRow = (props) => {
             </div>:null}
         <div class="ui large input">
             <input 
-            type="text" 
+            type="number" 
             placeholder="Length"
             value={length}
             onChange={(e)=>setLength(e.target.value)}
@@ -33,7 +34,7 @@ const CbmRow = (props) => {
             </div>:null}
         <div class="ui large input">
             <input 
-            type="text" 
+            type="number" 
             placeholder="Breadth"
             value={breadth}
             onChange={(e)=>setBreadth(e.target.value)}
@@ -49,7 +50,7 @@ const CbmRow = (props) => {
             </div>:null}
         <div class="ui large input">
             <input 
-            type="text" 
+            type="number" 
             placeholder="Height"
             value={height}
             onChange={(e)=>setHeight(e.target.value)}

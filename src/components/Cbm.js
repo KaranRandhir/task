@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import calculator from "../assets/calculator.svg";
 import "./Cbm.css";
 import CbmRow from "./CbmRow";
+import { Fade } from "react-reveal";
 
 const Cbm = () => {
   const [total1, setTotal1] = useState("0");
@@ -29,20 +30,23 @@ const Cbm = () => {
   return (
     <React.Fragment>
       <div className="content-container">
+        <Fade left>
         <div className="calculator-content">
           <div>
             <div className="calculator-content__heading">
               Cubic Metre Calculator
-              </div>
-        This CBM calculator for shipping is a simple tool that helps you
-determine the volume and weight of your consignment.
-This helps you plan your transport: all you have to do is input the
-dimensions and weight of the cube you’re shipping, and our
-calculator will tell you how many cartons of this size will fit in a standard
-containers
-</div>
+            </div>
+            This CBM calculator for shipping is a simple tool that helps you
+            determine the volume and weight of your consignment. This helps you
+            plan your transport: all you have to do is input the dimensions and
+            weight of the cube you’re shipping, and our calculator will tell you
+            how many cartons of this size will fit in a standard containers.
+          </div>
         </div>
-        <img src={calculator} alt="calculator" className="cbmimage"/>
+        </Fade>
+        <Fade right>
+        <img src={calculator} alt="calculator" className="cbmimage" />
+        </Fade>
       </div>
       <div className="cbmCalculator">
         <CbmRow multiply={calculateTotal1} show />
