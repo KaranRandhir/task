@@ -3,6 +3,7 @@ import calculator from "../assets/calculator.svg";
 import "./Cbm.css";
 import CbmRow from "./CbmRow";
 import { Fade } from "react-reveal";
+import Footer from "./Footer"
 
 const Cbm = () => {
   const [total1, setTotal1] = useState("0");
@@ -93,6 +94,7 @@ Volume mt3/ft3: Shipment volume in mt3/ft3<br/>
 40 FT min/max: Approx. minimum & maximum number of packages which can be placed inside standard 40 FT container<br/>
 40 FT HC min/max: Approx. minimum & maximum number of packages which can be placed inside standard 40 FT High Cube container<br/>
       </div>
+      <Footer/>
     </React.Fragment>
   );
 };
