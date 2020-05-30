@@ -78,14 +78,14 @@ On this calculator you can add upto 5 products to get Volume Weight in meter (m3
 Number of Packages Minimum & Maximum in Standard 20 FT Container,<br/>
 Number of Packages Minimum & Maximum in Standard 40 FT Container, and<br/>
  Number of packages Minimum & Maximum in Standard 40 FT High Cube Container.<br/>
-<br/>
+<br/><br/>
 Steps; incase you enter dimensions in cm
-<br/>
+<br/><br/>
 Length (cm) : Your package length in centimeter<br/>
 Breadth (cm) : Your package breath in centimeter<br/>
 Height (cm) : Your package height in centimeter<br/>
 Weight (kg) : Your package weight in kilogram<br/>
-Quantity : Number of packages, it only effects the Weight, Volume Weight, and shipment volume.<br/>
+Quantity : Number of packages, it only effects the Weight, Volume Weight, and shipment volume.<br/><br/>
 Results<br/>
 Weight kg/lbs : Shipment weight in kg/lbs<br/>
 Volume Weight kg/lbs : Volume weight of shipment in kg/lbs<br/>

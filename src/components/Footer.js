@@ -2,7 +2,7 @@ import React from "react"
 import "./footer.css"
 const Footer = () => {
     return (
-        <div style={{background:"black",display:"flex",flexDirection:"column",textAlign:"center",marginTop:"5rem",height:"auto"}}>
+        <div style={{background:"steelblue",display:"flex",flexDirection:"column",textAlign:"center",marginTop:"5rem",height:"auto"}}>
         <div className="footer">
             <div  className="abouts" >
            
@@ -51,7 +51,7 @@ const Footer = () => {
         <i class="facebook icon"></i>
         <i class="instagram icon"></i>
         </div>
-        <div style={{marginTop:"1.5rem",color:"grey"}}>
+        <div style={{marginTop:"1.5rem",color:"whitesmoke"}}>
         Ⓒ Copyright Ⓒ 2020, IndiaPort. All rights reserved
         </div>
       
