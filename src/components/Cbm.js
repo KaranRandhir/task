@@ -94,6 +94,36 @@ Volume mt3/ft3: Shipment volume in mt3/ft3<br/>
 40 FT min/max: Approx. minimum & maximum number of packages which can be placed inside standard 40 FT container<br/>
 40 FT HC min/max: Approx. minimum & maximum number of packages which can be placed inside standard 40 FT High Cube container<br/>
       </div>
+      <div className='cbmtable'>
+      <table class="ui celled table">
+  <thead>
+    <tr><th>Container/Dimensions</th>
+    <th>Length(cm)</th>
+    <th>Breadth(cm)</th>
+    <th>Height(cm)</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td data-label="Name">10 FT Container</td>
+      <td data-label="Age">589</td>
+      <td data-label="Job">230</td>
+      <td data-label="Job">230</td>
+    </tr>
+    <tr>
+      <td data-label="Name">20 FT Container</td>
+      <td data-label="Age">1200</td>
+      <td data-label="Job">230</td>
+      <td data-label="Job">230</td>
+    </tr>
+    <tr>
+      <td data-label="Name">40 FT High Cube Container</td>
+      <td data-label="Age">1200</td>
+      <td data-label="Job">230</td>
+      <td data-label="Job">260</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
       <Footer/>
     </React.Fragment>
   );
