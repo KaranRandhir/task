@@ -59,6 +59,40 @@ const Cbm = () => {
           {total1 + total2 + total3 + total4 + total5}
         </div>
       </div>
+      <div className="cbm-info">
+      Cubic Meter Calculator Formula<br/>
+Length (in centimeter) X Width (in centimeter) X Height (in centimeter) / 1000000 = Cubic meter (m3)<br/>
+We can input dimensions in Centimeter, milimeter, meter, inch, feet or yard<br/>
+How to use Cubic Meter Calculator in Meter for Multiple Products?
+<br/><br/><br/>
+Loadability of ocean containers<br/>
+
+20ft container approximately 26-28 CBM<br/>
+40ft container approximately 55-58 CBM<br/>
+40ft HQ container approximately 60-68 CBM<br/>
+45ft HQ container approximately 78 CBM<br/>
+<br/><br/><br/>
+On this calculator you can add upto 5 products to get Volume Weight in meter (m3),<br/>
+ Volume Weight in feet(f3),<br/>
+Number of Packages Minimum & Maximum in Standard 20 FT Container,<br/>
+Number of Packages Minimum & Maximum in Standard 40 FT Container, and<br/>
+ Number of packages Minimum & Maximum in Standard 40 FT High Cube Container.<br/>
+<br/>
+Steps; incase you enter dimensions in cm
+<br/>
+Length (cm) : Your package length in centimeter<br/>
+Breadth (cm) : Your package breath in centimeter<br/>
+Height (cm) : Your package height in centimeter<br/>
+Weight (kg) : Your package weight in kilogram<br/>
+Quantity : Number of packages, it only effects the Weight, Volume Weight, and shipment volume.<br/>
+Results<br/>
+Weight kg/lbs : Shipment weight in kg/lbs<br/>
+Volume Weight kg/lbs : Volume weight of shipment in kg/lbs<br/>
+Volume mt3/ft3: Shipment volume in mt3/ft3<br/>
+20 FT min/max: Approx. minimum & maximum of packages which can be placed inside standard 20 FT container<br/>
+40 FT min/max: Approx. minimum & maximum number of packages which can be placed inside standard 40 FT container<br/>
+40 FT HC min/max: Approx. minimum & maximum number of packages which can be placed inside standard 40 FT High Cube container<br/>
+      </div>
     </React.Fragment>
   );
 };
