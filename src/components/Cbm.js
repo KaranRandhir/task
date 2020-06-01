@@ -65,8 +65,12 @@ const Cbm = () => {
         
         
         <div className="total-cbm">
-          Total Volume:
-          {total1 + total2 + total3 + total4 + total5}
+        <div class="ui right labeled input">
+  <label for="amount" class="ui basic label">Total</label>
+  <input disabled value={total1+total2+total3+total4+total5}/>
+  <div class="ui basic label">cbm</div>
+</div>
+          
         </div>
       </div>
       <div className="cbmCalculator small">
