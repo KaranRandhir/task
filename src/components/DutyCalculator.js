@@ -2,6 +2,7 @@ import React from "react"
 import DutySvg from "../assets/DutySvg.svg"
 import {Fade} from "react-reveal"
 import "./Cbm.css"
+import "./DutyCalculator.css"
 
 const DutyCalculator = () => {
     return (
@@ -39,6 +40,53 @@ source of government revenue.
         <Fade right>
         <img src={DutySvg} alt="calculator" className="cbmimage" />
         </Fade>
+      </div>
+      <div className="DutyCal">
+        <div className="dutyCalRow">
+          <div className="step">
+            <div className="stepHeading">
+            STEP 1
+            </div>
+            <div className="inputRow">
+              <div style={{fontSize:"2rem"}}>
+                dutyhhhhhhhhhhhhhh
+              </div>
+            <div className="ui large input">
+              <input/>
+            </div>
+            </div>
+            <div className="inputRow">
+            <div style={{fontSize:"2rem"}}>
+                dutyhhhhhhhhhh
+              </div>
+            <div className="ui large input">
+              <input/>
+            </div>
+            </div>
+            <div className="inputRow">
+            </div>
+
+            </div>
+
+            <div className="step">
+            <div className="stepHeading">
+            STEP 2
+            </div>
+            
+            </div>
+        </div>
+        <div className="dutyCalRow">
+        <div className="step">
+        <div className="stepHeading">
+            STEP 3
+            </div>
+            </div>
+            <div className="step">
+            <div className="stepHeading">
+            STEP 4
+            </div>
+            </div>
+        </div>
       </div>
         </React.Fragment>
     )

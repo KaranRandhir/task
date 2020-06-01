@@ -1,0 +1,34 @@
+.step {
+    background-color: #E6F0FF;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    height: 70vh;
+    min-height: fit-content;
+    margin-top: 4rem;
+    width: 43vw;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+   
+
+}
+
+.dutyCalRow {
+    display: flex;
+    width: 90vw;
+    margin: auto;
+    justify-content: space-between;
+
+}
+
+.stepHeading {
+    font-size: 3rem;
+    color:grey;
+    font-weight: 700;
+}
+
+.inputRow {
+    display:flex;
+    justify-content: space-between;
+}

@@ -65,10 +65,10 @@ const Cbm = () => {
         
         
         <div className="total-cbm">
-        <div class="ui right labeled input">
+        <div class="ui = labeled input">
   <label for="amount" class="ui basic label">Total</label>
-  <input disabled value={total1+total2+total3+total4+total5}/>
-  <div class="ui basic label">cbm</div>
+  <input disabled value={total1+total2+total3+total4+total5+" cbm"}/>
+  
 </div>
           
         </div>
