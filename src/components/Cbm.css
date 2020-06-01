@@ -59,16 +59,48 @@
   margin: auto;
   margin-top: 5rem;
   }
-
-@media only screen and (max-width: 800px) {
-    
+.small {
+  display: none;
+}
+@media only screen and (max-width: 1200px) {
+  
+  .small{
+    display: flex;
+  }
+  .big {
+    display: none;
+  }
   .cbmCalculator{
-    height: 70vh;
+    height: auto;
     width: 90vw;
+    padding-bottom: 2rem;
   }
   .cbmCalculatorContainer{
     height: 70vh;
     width: 90vw;
+    justify-content: center;
+    align-items: center;
   }
+  .calculator-content {
+    justify-content: flex-start;
+    width: 90vw;
+    margin: auto;
+    height: auto;
+    margin-bottom: 4rem;
+    margin-top: 6rem;
+  }
+  .content-container {
+    flex-direction: column;
+  }
+  .cbmimage{
+    margin: auto;
+    width: 90vw;
+    height: auto;
+    margin-bottom:5rem;
+  }
+  .cbm-info {
+    text-align: center;
+  }
+
   
 }

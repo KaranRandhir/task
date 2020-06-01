@@ -31,9 +31,11 @@ const Cbm = () => {
   return (
     <React.Fragment>
       <div className="content-container">
-        <Fade left>
+        
         <div className="calculator-content">
+        <Fade left>
           <div>
+
             <div className="calculator-content__heading">
               Cubic Metre Calculator
             </div>
@@ -43,18 +45,29 @@ const Cbm = () => {
             weight of the cube you’re shipping, and our calculator will tell you
             how many cartons of this size will fit in a standard containers.
           </div>
+          </Fade>
+          
         </div>
-        </Fade>
+       
         <Fade right>
         <img src={calculator} alt="calculator" className="cbmimage" />
         </Fade>
       </div>
-      <div className="cbmCalculator">
+      <div className="cbmCalculator big">
         <CbmRow multiply={calculateTotal1} show />
         <CbmRow multiply={calculateTotal2} />
         <CbmRow multiply={calculateTotal3} />
         <CbmRow multiply={calculateTotal4} />
         <CbmRow multiply={calculateTotal5} />
+        
+        
+        <div className="total-cbm">
+          Total Volume:
+          {total1 + total2 + total3 + total4 + total5}
+        </div>
+      </div>
+      <div className="cbmCalculator small">
+        <CbmRow multiply={calculateTotal1} show />
         <div className="total-cbm">
           Total Volume:
           {total1 + total2 + total3 + total4 + total5}

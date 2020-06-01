@@ -4,6 +4,7 @@ import AboutPage from "./AboutPage";
 import Navbar from "./Navbar";
 import { Route, Link, BrowserRouter as Router, Switch } from "react-router-dom";
 import Cbm from "./Cbm";
+import DutyCalculator from "./DutyCalculator"
 
 class App extends React.PureComponent {
   render() {
@@ -15,6 +16,7 @@ class App extends React.PureComponent {
               <Route exact path="/" component={HomePage} />
               <Route path="/cbm" exact component={Cbm} />
               <Route path="/about" exact component={AboutPage} />
+              <Route path="/dutycalculator" exact component={DutyCalculator} />
             </Switch>
           </Navbar>
         </Router>

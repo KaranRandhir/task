@@ -3,3 +3,12 @@
     justify-content: space-around;
     font-weight: bold;
 }
+@media only screen and (max-width: 1200px){
+    .cbm-row{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+}

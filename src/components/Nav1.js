@@ -50,7 +50,7 @@ const Nav1 = () => {
     Calculator.
    
     <div class="menu">
-      <Link to="/cbm" class="item">Duty Calculator</Link>
+      <Link to="/dutycalculator" class="item">Duty Calculator</Link>
       <Link to="/cbm" class="item">CBM Calculator</Link>
       
     </div>
