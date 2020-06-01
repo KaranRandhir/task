@@ -25,7 +25,7 @@ class Navbar extends React.PureComponent {
           <Nav2   onPress={this.renderSidebar}/>
         </div>
         
-        <div className="three">
+        <div className="three" onClick={this.hideSidebar}>
           <SideMenu  width={this.state.width} onPress={this.hideSidebar}/>
         </div>
 

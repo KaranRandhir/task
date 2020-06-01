@@ -2,7 +2,7 @@ import React from "react"
 import "./nav1.css"
 import { Link } from "react-router-dom";
 
-const SideMenu = ({width}) => {
+const SideMenu = ({width},props) => {
     return (
         <div style={{width:`${width}`,overflowX:"hidden",transition:".3s",zIndex:"1000"}}class="ui sidebar visible  vertical menu">
         
@@ -23,9 +23,10 @@ const SideMenu = ({width}) => {
         <a style={{fontSize:"1.5rem"}} class="item">
           Tools
         </a>
-        <a  style={{fontSize:"1.5rem"}} class="item">
-          Calculators
-        </a>
+        
+        <Link to="/cbm"style={{fontSize:"1.5rem"}} class="item">
+          Cbm Calculator
+        </Link>
         <a style={{fontSize:"1.5rem"}} class="item">
           Others
         </a>
