@@ -1,7 +1,7 @@
 import React from "react"
 import "./nav1.css"
 import crane from "../assets/crane.png"
-import { BrowserRouter as Router,Route,Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const Nav1 = () => {
     return (
@@ -50,7 +50,7 @@ const Nav1 = () => {
     Calculator.
    
     <div class="menu">
-      <Link to="/dutycalculator" class="item">Duty Calculator</Link>
+      <Link to="/cbm" class="item">Duty Calculator</Link>
       <Link to="/cbm" class="item">CBM Calculator</Link>
       
     </div>
