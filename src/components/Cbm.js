@@ -11,6 +11,7 @@ const Cbm = () => {
   const [total3, setTotal3] = useState("0");
   const [total4, setTotal4] = useState("0");
   const [total5, setTotal5] = useState("0");
+  const [total6, setTotal6] = useState("0");
 
   const calculateTotal1 = (x) => {
     setTotal1(x);
@@ -27,7 +28,9 @@ const Cbm = () => {
   const calculateTotal5 = (x) => {
     setTotal5(x);
   };
-
+  const calculateTotal6 = (x) => {
+    setTotal6(x);
+  };
   return (
     <React.Fragment>
       <div className="content-container">
@@ -67,10 +70,10 @@ const Cbm = () => {
         </div>
       </div>
       <div className="cbmCalculator small">
-        <CbmRow multiply={calculateTotal1} show />
+        <CbmRow multiply={calculateTotal6} show />
         <div className="total-cbm">
           Total Volume:
-          {total1 + total2 + total3 + total4 + total5}
+          {total6}
         </div>
       </div>
       <div className="cbm-info">
