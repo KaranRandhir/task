@@ -45,34 +45,74 @@ source of government revenue.
         <div className="dutyCalRow">
           <div className="step">
             <div className="stepHeading">
-            STEP 1
+            STEP 1 : Invoice Calculation
             </div>
-            <div className="inputRow">
-              <div style={{fontSize:"2rem"}}>
-                dutyhhhhhhhhhhhhhh
+            <div style={{marginTop:"8rem"}}className="inputRow">
+              <div style={{fontSize:"1.5rem"}}>
+                Currency
               </div>
-            <div className="ui large input">
+            <div className="ui  input">
               <input/>
             </div>
             </div>
             <div className="inputRow">
-            <div style={{fontSize:"2rem"}}>
-                dutyhhhhhhhhhh
+            <div style={{fontSize:"1.5rem"}}>
+                Exchange Rate
               </div>
-            <div className="ui large input">
+            <div className="ui  input">
               <input/>
             </div>
             </div>
             <div className="inputRow">
+            <div style={{fontSize:"1.5rem"}}>
+                Invoice Value
+              </div>
+            <div className="ui  input">
+              <input/>
             </div>
-
+            </div>
+            <div className="inputRow">
+            <div style={{fontSize:"1.5rem"}}>
+                Freight
+              </div>
+            <div className="ui  input">
+              <input/>
+            </div>
+            </div>
+            <div className="inputRow">
+            <div style={{fontSize:"1.5rem"}}>
+                Insurace
+              </div>
+            <div className="ui  input">
+              <input/>
+            </div>
+            </div>
+            <div className="inputRow">
+            <div style={{fontSize:"1.5rem"}}>
+                CIF in rupees
+              </div>
+            <div className="ui  input">
+              <input/>
+            </div>
+            </div>
             </div>
 
             <div className="step">
             <div className="stepHeading">
-            STEP 2
+            STEP 2 : Duty Calculation
+            </div>
+            <div className="inputRow">
+            <div style={{fontSize:"1.5rem"}}>
+                CIF in rupees
+              </div>
+            <div className="ui  input">
+              <input/>
+            </div>
+            <div className="ui  input">
+              <input/>
             </div>
             
+            </div>
             </div>
         </div>
         <div className="dutyCalRow">
@@ -80,6 +120,8 @@ source of government revenue.
         <div className="stepHeading">
             STEP 3
             </div>
+            
+            
             </div>
             <div className="step">
             <div className="stepHeading">

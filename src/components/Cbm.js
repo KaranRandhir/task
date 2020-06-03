@@ -12,7 +12,8 @@ const Cbm = () => {
   const [total4, setTotal4] = useState("0");
   const [total5, setTotal5] = useState("0");
   const [total6, setTotal6] = useState("0");
-
+ 
+  
   const calculateTotal1 = (x) => {
     setTotal1(x);
   };
@@ -31,6 +32,10 @@ const Cbm = () => {
   const calculateTotal6 = (x) => {
     setTotal6(x);
   };
+  const [items,addItems] = useState([<div className="cbmCalculator small">
+  <CbmRow multiply={calculateTotal6} show />
+  </div>
+]);
   return (
     <React.Fragment>
       <div className="content-container">
@@ -73,13 +78,14 @@ const Cbm = () => {
           
         </div>
       </div>
-      <div className="cbmCalculator small">
-        <CbmRow multiply={calculateTotal6} show />
-        <div className="total-cbm">
-          Total Volume:
-          {total6}
-        </div>
-      </div>
+      {items}
+   <div className="small">   
+  <button style={{marginTop:"5vh",marginLeft:"4vw"}} onClick={()=>addItems([...items,<div className="cbmCalculator small">
+  <CbmRow multiply={calculateTotal6} show />
+  </div>])} class="ui large primary button">
+  Add 
+</button>
+</div>
       <div className="cbm-info">
       Cubic Meter Calculator Formula<br/>
 Length (in centimeter) X Width (in centimeter) X Height (in centimeter) / 1000000 = Cubic meter (m3)<br/>

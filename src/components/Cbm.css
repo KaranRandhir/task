@@ -66,6 +66,7 @@
   
   .small{
     display: flex;
+    margin-top: 2rem;
   }
   .big {
     display: none;
