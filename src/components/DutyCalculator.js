@@ -170,7 +170,7 @@ const DutyCalculator = () => {
                 <input
                 disabled
                   type="number"
-                  value={(exchange*invoice*(1+(insurance*0.01)+(freight*0.01))).toPrecision(10)}
+                  value={(exchange*invoice*(1+(insurance*0.01)+(freight*0.01))).toFixed(2)}
                   name="cif"
                   placeholder="CIF"
                 />
