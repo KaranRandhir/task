@@ -9,6 +9,8 @@ const DutyCalculator = () => {
   const [insurance, setInsurance] = useState(false);
   const [currency,setCurrency] = useState("USD")
   const [exchange,setExchange]=useState("75")
+  const [invoice,setInvoice]=useState("")
+  const [knownFreight,setKnownFreight]=useState("0")
 
   return (
     <React.Fragment>
@@ -70,9 +72,11 @@ const DutyCalculator = () => {
                 <label>Invoice Value (in selected currency)</label>
 
                 <input
-                  type="text"
-                  name="shipping[first-name]"
-                  placeholder="percentage"
+                value={invoice}
+                onChange={(e)=>setInvoice(e.target.value)}
+                  type="number"
+                  name="Invoice Value"
+                  placeholder="Invoice Value"
                 />
               </div>
               <br/>
@@ -81,7 +85,7 @@ const DutyCalculator = () => {
                 <div className="field">
                   <div
                     onClick={
-                      freight ? () => setFreight(false) : () => setFreight(true)
+                      freight ? () => setFreight(false) : () => setFreight(0.2)
                     }
                     class="ui checkbox"
                   >
@@ -89,21 +93,25 @@ const DutyCalculator = () => {
                       type="checkbox"
                       tabindex="0"
                       class="hidden"
-                      checked={freight}
+                      checked={freight===0.2?true:false}
                     />
                     <label>Freight (20%)</label>
                   </div>
                 </div>
                 <div className="field">
                   <label>20%</label>
-                  <input disabled />
+                  <input 
+                  disabled
+                  value={freight*invoice} />
                 </div>
                 <div className="field">
                   <label>Freight(if Known)</label>
 
                   <input
-                    disabled={freight}
-                    type="text"
+                    disabled={freight===0.2?true:false}
+                    value={freight===0.2?false:freight}
+                    onChange={freight===0?null:(e)=>setFreight(e.target.value)}
+                    type="number"
                     name="shipping[first-name]"
                     placeholder="percentage"
                   />
@@ -114,7 +122,7 @@ const DutyCalculator = () => {
                 <div className="field">
                   <div
                     onClick={
-                      insurance ? () => setInsurance(false) : () => setInsurance(true)
+                      insurance ? () => setInsurance(false) : () => setInsurance(0.01125)
                     }
                     class="ui checkbox"
                   >
@@ -123,21 +131,25 @@ const DutyCalculator = () => {
                       type="checkbox"
                       tabindex="0"
                       class="hidden"
-                      checked={insurance}
+                      checked={insurance===0.01125?true:false}
                     />
                     <label>Insurance (1.125%)</label>
                   </div>
                 </div>
                 <div className="field">
                   <label>1.125%</label>
-                  <input disabled />
+                  <input
+                  value={insurance===0.01125?0.01125*invoice:0} 
+                  disabled />
                 </div>
                 <div className="field">
                   <label>Insurance (if known)</label>
 
                   <input
-                  disabled={insurance}
-                    type="text"
+                  disabled={insurance===0.01125?true:false}
+                    type="number"
+                    value={insurance===0.01125?null:insurance}
+                    onChange={insurance===0.01125?null:e=>setInsurance(e.target.value)}
                     name="shipping[first-name]"
                     placeholder="percentage"
                   />
@@ -146,12 +158,14 @@ const DutyCalculator = () => {
 
               <br />
               <div className="feild">
-                <label>Total(including duties)</label>
+                <label>CIF in rupees</label>
 
                 <input
-                  type="text"
+                disabled
+                  type="number"
+                  value={exchange*invoice+invoice*freight+invoice*insurance}
                   name="shipping[first-name]"
-                  placeholder="percentage"
+                  placeholder="CIF"
                 />
               </div>
               <br />
@@ -182,7 +196,7 @@ const DutyCalculator = () => {
                 </div>
               </div>
               <div className="feild">
-                <label>Basic Duty</label>
+                <label>SWS</label>
                 <div class="two fields">
                   <div class="field">
                     <input
@@ -201,7 +215,7 @@ const DutyCalculator = () => {
                 </div>
               </div>
               <div className="feild">
-                <label>Basic Duty</label>
+                <label>Additional Duty of Customs</label>
                 <div class="two fields">
                   <div class="field">
                     <input
@@ -220,7 +234,7 @@ const DutyCalculator = () => {
                 </div>
               </div>
               <div className="feild">
-                <label>Basic Duty</label>
+                <label>GST</label>
                 <div class="two fields">
                   <div class="field">
                     <input
@@ -239,7 +253,7 @@ const DutyCalculator = () => {
                 </div>
               </div>
               <div className="feild">
-                <label>Basic Duty</label>
+                <label>Total Duties</label>
                 <div class="two fields">
                   <div class="field">
                     <input
