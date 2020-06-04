@@ -7,6 +7,8 @@ import Footer from "./Footer";
 const DutyCalculator = () => {
   const [freight, setFreight] = useState(false);
   const [insurance, setInsurance] = useState(false);
+  const [currency,setCurrency] = useState("USD")
+  const [exchange,setExchange]=useState("75")
 
   return (
     <React.Fragment>
@@ -47,6 +49,7 @@ const DutyCalculator = () => {
                   <div class="field">
                     <label style={{ fontSize: "1rem" }}>Currency</label>
                     <input
+                      value={currency}
                       type="text"
                       name="shipping[first-name]"
                       placeholder="percentage"
@@ -55,6 +58,7 @@ const DutyCalculator = () => {
                   <div class="field">
                     <label style={{ fontSize: "1rem" }}>Exchange Rate</label>
                     <input
+                      value={exchange}
                       type="text"
                       name="shipping[last-name]"
                       placeholder="rupees"
@@ -63,7 +67,7 @@ const DutyCalculator = () => {
                 </div>
               </div>
               <div className="feild">
-                <label>Total(including duties)</label>
+                <label>Invoice Value (in selected currency)</label>
 
                 <input
                   type="text"
