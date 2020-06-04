@@ -92,7 +92,7 @@ const DutyCalculator = () => {
                 <div className="field">
                   <div
                     onClick={
-                      freight ? () => setFreight(false) : () => setFreight(0.2)
+                      freight ? () => setFreight(false) : () => setFreight(20)
                     }
                     class="ui checkbox"
                   >
@@ -100,24 +100,24 @@ const DutyCalculator = () => {
                       type="checkbox"
                       tabIndex="0"
                       className="hidden"
-                      checked={freight===0.2?true:false}
+                      checked={freight===20?true:false}
                     />
                     <label>Freight (20%)</label>
                   </div>
                 </div>
                 <div className="field">
-                  <label>20%</label>
+                  <label>20% {currency}</label>
                   <input 
                   disabled
-                  value={freight===0.2?freight*invoice*exchange:0} />
+                  value={freight===20?freight*invoice*0.01:0} />
                 </div>
                 <div className="field">
                   <label>Freight(if Known)</label>
 
                   <input
-                    disabled={freight===0.2?true:false}
-                    value={freight===0.2?false:freight}
-                    onChange={freight===0?null:(e)=>setFreight(e.target.value)}
+                    disabled={freight===20?true:false}
+                    value={freight===20?false:freight}
+                    onChange={freight===20?null:(e)=>setFreight(e.target.value)}
                     type="number"
                     name="freight"
                     placeholder="percentage"
@@ -129,7 +129,7 @@ const DutyCalculator = () => {
                 <div className="field">
                   <div
                     onClick={
-                      insurance ? () => setInsurance(false) : () => setInsurance(0.01125)
+                      insurance ? () => setInsurance(false) : () => setInsurance(1.25)
                     }
                     class="ui checkbox"
                   >
@@ -138,25 +138,25 @@ const DutyCalculator = () => {
                       type="checkbox"
                       tabindex="0"
                       class="hidden"
-                      checked={insurance===0.01125?true:false}
+                      checked={insurance===1.25?true:false}
                     />
                     <label>Insurance (1.125%)</label>
                   </div>
                 </div>
                 <div className="field">
-                  <label>1.125%</label>
+                  <label>1.125% {currency}</label>
                   <input
-                  value={insurance===0.01125?0.01125*invoice*exchange:0} 
+                  value={insurance===1.25?insurance*invoice*0.01:0} 
                   disabled />
                 </div>
                 <div className="field">
                   <label>Insurance (if known)</label>
 
                   <input
-                  disabled={insurance===0.01125?true:false}
+                  disabled={insurance===1.25?true:false}
                     type="number"
-                    value={insurance===0.01125?null:insurance}
-                    onChange={insurance===0.01125?null:e=>setInsurance(e.target.value)}
+                    value={insurance===1.25?null:insurance}
+                    onChange={insurance===1.25?null:e=>setInsurance(e.target.value)}
                     name="insurance"
                     placeholder="percentage"
                   />
@@ -165,12 +165,12 @@ const DutyCalculator = () => {
 
               <br />
               <div className="feild">
-                <label>CIF in rupees</label>
+                <label>CIF in INR</label>
 
                 <input
                 disabled
                   type="number"
-                  value={exchange*invoice*(1+insurance+freight)}
+                  value={(exchange*invoice*(1+(insurance*0.01)+(freight*0.01))).toPrecision(10)}
                   name="cif"
                   placeholder="CIF"
                 />
