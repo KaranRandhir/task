@@ -1,4 +1,4 @@
-.step {
+.step  {
     background-color: #E6F0FF;
     display: flex;
     flex-direction: column;
@@ -9,13 +9,15 @@
     width: 43vw;
     border-radius: 5px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    justify-content: space-between;
-    color:grey;
+    justify-content: flex-start;
+    font-weight: bold;
     min-height: fit-content;
-
+    font-size: small;
+    
    
 
 }
+
 
 .dutyCalRow {
     display: flex;
@@ -30,6 +32,7 @@
     color:grey;
     font-weight: 700;
     text-align: center;
+    margin-bottom: 5rem;
 }
 
 .inputRow {
@@ -43,5 +46,6 @@
     .step {
         width:90vw;
         margin:auto;
+        margin-top: 4rem;
     }
 }
