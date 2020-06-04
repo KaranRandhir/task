@@ -5,14 +5,22 @@ import "./Cbm.css";
 import "./DutyCalculator.css";
 import Footer from "./Footer";
 const DutyCalculator = () => {
+  
+  const currencies = {
+    "USD":75,
+    "EUR":85,
+    "INR":1
+  }
   const [freight, setFreight] = useState(false);
   const [insurance, setInsurance] = useState(false);
   const [currency,setCurrency] = useState("USD")
-  const [exchange,setExchange]=useState("75")
+  
   const [invoice,setInvoice]=useState("")
-  const [knownFreight,setKnownFreight]=useState("0")
-
+  const exchange=currencies[currency]
+  
+  console.log(exchange)
   return (
+    
     <React.Fragment>
       <div className="content-container">
         <div className="calculator-content">
@@ -50,20 +58,19 @@ const DutyCalculator = () => {
                 <div class="two fields">
                   <div class="field">
                     <label style={{ fontSize: "1rem" }}>Currency</label>
-                    <input
-                      value={currency}
-                      type="text"
-                      name="shipping[first-name]"
-                      placeholder="percentage"
-                    />
+                   <select onChange={(e)=>setCurrency(e.target.value)} className="ui dropdown">
+                    <option value="USD">USD</option>
+                    <option value="INR">INR</option>
+                    <option value="EUR">EUR</option>
+                    </select>
                   </div>
                   <div class="field">
                     <label style={{ fontSize: "1rem" }}>Exchange Rate</label>
                     <input
                       value={exchange}
-                      type="text"
-                      name="shipping[last-name]"
-                      placeholder="rupees"
+                      type="number"
+                      name="exchange-rate"
+                      placeholder="exchange rate"
                     />
                   </div>
                 </div>
@@ -75,7 +82,7 @@ const DutyCalculator = () => {
                 value={invoice}
                 onChange={(e)=>setInvoice(e.target.value)}
                   type="number"
-                  name="Invoice Value"
+                  name="invoice-value"
                   placeholder="Invoice Value"
                 />
               </div>
@@ -91,8 +98,8 @@ const DutyCalculator = () => {
                   >
                     <input
                       type="checkbox"
-                      tabindex="0"
-                      class="hidden"
+                      tabIndex="0"
+                      className="hidden"
                       checked={freight===0.2?true:false}
                     />
                     <label>Freight (20%)</label>
@@ -102,7 +109,7 @@ const DutyCalculator = () => {
                   <label>20%</label>
                   <input 
                   disabled
-                  value={freight*invoice} />
+                  value={freight===0.2?freight*invoice*exchange:0} />
                 </div>
                 <div className="field">
                   <label>Freight(if Known)</label>
@@ -112,7 +119,7 @@ const DutyCalculator = () => {
                     value={freight===0.2?false:freight}
                     onChange={freight===0?null:(e)=>setFreight(e.target.value)}
                     type="number"
-                    name="shipping[first-name]"
+                    name="freight"
                     placeholder="percentage"
                   />
                 </div>
@@ -139,7 +146,7 @@ const DutyCalculator = () => {
                 <div className="field">
                   <label>1.125%</label>
                   <input
-                  value={insurance===0.01125?0.01125*invoice:0} 
+                  value={insurance===0.01125?0.01125*invoice*exchange:0} 
                   disabled />
                 </div>
                 <div className="field">
@@ -150,7 +157,7 @@ const DutyCalculator = () => {
                     type="number"
                     value={insurance===0.01125?null:insurance}
                     onChange={insurance===0.01125?null:e=>setInsurance(e.target.value)}
-                    name="shipping[first-name]"
+                    name="insurance"
                     placeholder="percentage"
                   />
                 </div>
@@ -163,8 +170,8 @@ const DutyCalculator = () => {
                 <input
                 disabled
                   type="number"
-                  value={exchange*invoice+invoice*freight+invoice*insurance}
-                  name="shipping[first-name]"
+                  value={exchange*invoice*(1+insurance+freight)}
+                  name="cif"
                   placeholder="CIF"
                 />
               </div>
