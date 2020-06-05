@@ -15,10 +15,23 @@ const DutyCalculator = () => {
   const [insurance, setInsurance] = useState(false);
   const [currency,setCurrency] = useState("USD")
   
-  const [invoice,setInvoice]=useState("")
+  const [invoice,setInvoice]=useState(0)
   const exchange=currencies[currency]
-  
-  console.log(exchange)
+  const[bd,setbd]=useState(20)
+  const[sws,setSws]=useState(10)
+  const[cvd,setCvd]=useState(0)
+  const[gst,setGst]=useState(18)
+  const cifAmount=(exchange*invoice*(1+(insurance*0.01)+(freight*0.01)));
+  const bdAmount=(bd*(exchange*invoice*(1+(insurance*0.01)+(freight*0.01)))*0.01)
+  const swsAmount=sws*0.01*bdAmount;
+  const cvdAmount=(cvd*(bdAmount+cifAmount+swsAmount)*0.01)
+  const gstAmount=(gst*(cifAmount+swsAmount+cvdAmount+bdAmount)*0.01)
+  const totalDuty = gstAmount+swsAmount+cvdAmount+bdAmount
+  console.log(cifAmount)
+  console.log(swsAmount)
+  console.log(cvdAmount)
+  console.log(bdAmount)
+  console.log(gstAmount)
   return (
     
     <React.Fragment>
@@ -184,97 +197,126 @@ const DutyCalculator = () => {
             <div className="stepHeading">STEP 2 : Duty Calculation</div>
             <div className="ui form">
               <div className="feild">
-                <label>Basic Duty</label>
+                
                 <div class="two fields">
+                
                   <div class="field">
+                  <label>Basic Duty %</label>
                     <input
-                      type="text"
-                      name="shipping[first-name]"
-                      placeholder="percentage"
+                      value={bd}
+                      onChange={(e)=>setbd(e.target.value)}
+                      type="number"
+                      name="basic-duty"
+                     
                     />
                   </div>
                   <div class="field">
+                    <label>INR</label>
                     <input
-                      type="text"
-                      name="shipping[last-name]"
-                      placeholder="rupees"
+                    disabled
+                    value={(bd*(exchange*invoice*(1+(insurance*0.01)+(freight*0.01)))*0.01).toFixed(2)}
+                      type="number"
+                      name="basic-duty-amount"
+                     
                     />
                   </div>
                 </div>
               </div>
               <div className="feild">
-                <label>SWS</label>
+             
                 <div class="two fields">
                   <div class="field">
+                  <label>SWS %</label>
                     <input
-                      type="text"
-                      name="shipping[first-name]"
-                      placeholder="percentage"
+                    value={sws}
+                      type="number"
+                      name="sws"
+                      onChange={(e)=>setSws(e.target.value)}
+                   
                     />
                   </div>
                   <div class="field">
+                    <label>INR</label>
                     <input
-                      type="text"
-                      name="shipping[last-name]"
-                      placeholder="rupees"
+                    disabled
+                      type="number"
+                      name="sws-amount"
+                      value={(sws*(bd*(exchange*invoice*(1+(insurance*0.01)+(freight*0.01)))*0.01)*0.01).toFixed(2)}
                     />
                   </div>
                 </div>
               </div>
               <div className="feild">
-                <label>Additional Duty of Customs</label>
+                
                 <div class="two fields">
                   <div class="field">
+                  <label>Additional Duty of Customs (CVD) %</label>
                     <input
-                      type="text"
-                      name="shipping[first-name]"
-                      placeholder="percentage"
+                    value={cvd}
+                      type="number"
+                      name="cvd"
+                      onChange={e=>setCvd(e.target.value)}
+                     
                     />
                   </div>
                   <div class="field">
+                  <label>INR</label>
                     <input
-                      type="text"
-                      name="shipping[last-name]"
-                      placeholder="rupees"
+                    value={cvdAmount.toFixed(2)}
+                    disabled
+                      type="number"
+                      name="cvd-amount"
+                   
                     />
                   </div>
                 </div>
               </div>
               <div className="feild">
-                <label>GST</label>
+                
                 <div class="two fields">
                   <div class="field">
+                  <label>GST %</label>
                     <input
-                      type="text"
-                      name="shipping[first-name]"
-                      placeholder="percentage"
+                      type="number"
+                      name="gst"
+                      value={gst}
+                      onChange={e=>setGst(e.target.value)}
+                     
                     />
                   </div>
                   <div class="field">
+                    <label>INR</label>
                     <input
-                      type="text"
-                      name="shipping[last-name]"
-                      placeholder="rupees"
+                    disabled
+                    value={gstAmount.toFixed(2)}
+                      type="number"
+                      name="gst-amount"
+                     
                     />
                   </div>
                 </div>
               </div>
               <div className="feild">
-                <label>Total Duties</label>
+                
                 <div class="two fields">
+           
                   <div class="field">
+                  <label>Total Duties %</label>
                     <input
-                      type="text"
-                      name="shipping[first-name]"
-                      placeholder="percentage"
+                    value={totalDuty/cifAmount*100}
+                      type="number"
+                      name="total-duty"
+                    
                     />
                   </div>
                   <div class="field">
+                  <label>INR</label>
                     <input
-                      type="text"
-                      name="shipping[last-name]"
-                      placeholder="rupees"
-                    />
+                    disabled
+                      type="number"
+                      name="total-duty-amount"
+                      value={totalDuty.toFixed(2)}
+                     />
                   </div>
                 </div>
               </div>
