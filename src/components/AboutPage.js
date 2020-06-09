@@ -1,10 +1,9 @@
 import React from "react"
 import "./aboutpage.css"
-import team from "../assets/team.svg"
-import work from "../assets/work.svg"
-import team2 from "../assets/team2.svg"
-import skyline from "../assets/skyline.png"
+
+import skyline from "../assets/gateway.svg"
 import crane from "../assets/crane.png"
+import office from "../assets/office.svg"
 class AboutPage extends React.Component {
     render(){
         return(
@@ -79,12 +78,50 @@ class AboutPage extends React.Component {
                             </div>
                         </div>
                     </div>
+                    <img alt="office" src={office}/>
+                </div>
+                <div style={{marginBottom:"4rem"}}>
+                    <div className="heading">
+                        Our Team
+                    </div>
+                    <div className="team-items">
+                    <div className="team-item">
+                            <div className="team-item__heading">Sanesh Sagvekar</div>
+                            <div className="team-item__position">Front & Back-end developer & photographer</div>
+                        </div>
+                        <div className="team-item">
+                            <div className="team-item__heading">Vedant Kothari</div>
+                            <div className="team-item__position">Founder & chef</div>
+                        </div>
+                        <div className="team-item">
+                            <div className="team-item__heading">Karan Randhir</div>
+                            <div className="team-item__position"> Front end developer & Guitarist</div>
+                        </div>
+                        <div className="team-item">
+                            <div className="team-item__heading">Pramod Kodag</div>
+                            <div className="team-item__position">Project manager & Singer</div>
+                        </div>
+                        <div className="team-item">
+                            <div className="team-item__heading">Khayti Kothari</div>
+                            <div className="team-item__position"> R&D business model and finance & snowboarding</div>
+                        </div>
+                        <div className="team-item">
+                            <div className="team-item__heading">Zeba Barudgar</div>
+                            <div className="team-item__position">Edu tech head & poet</div>
+                        </div>
+                        <div className="team-item">
+                            <div className="team-item__heading">CA Abhishek shah</div>
+                            <div className="team-item__position"> Financial services & Traveller</div>
+                        </div>
+
+                        
+                    </div>
                 </div>
 
                 <div className="aboutfooter">
                  <div className="indiaport">
                  <div style={{display:"flex"}}>
-        <img style={{width:"3.5rem"}} src={crane} className="crane"/>
+        <img alt="crane" style={{width:"3.5rem"}} src={crane} className="crane"/>
           <div style={{marginLeft:".5vw"}}>
           <div className="title">
           IndiaPort<br/>
@@ -96,10 +133,10 @@ class AboutPage extends React.Component {
           </div>
                  </div>
                  <div style={{position:"absolute",bottom:"0",right:"0"}}>
-                    Privacy ©️ 2020 Indiaport
+                    Privacy <span role="img" aria-label="company">©️</span> 2020 Indiaport
                 </div>
                  <div>
-                 <img src={skyline}/>
+                 <img style={{width:"150px"}} alt="skyline" src={skyline}/>
                 </div>
                 <div style={{marginTop:"5vh"}} className="title">
                   India

@@ -1,0 +1,28 @@
+.blog-card {
+    width: 320px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    border-bottom: slateblue 2px solid;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.blog-card__heading{
+    height: 4rem;
+   font-size: 1.2rem;
+   font-weight: 800;
+    border-bottom:slategray  solid 1px;
+}
+
+.blog-card__author{
+    height: 2rem;
+ 
+    color: gray;
+   
+}
+
+.blog-card__content{
+    height: 14rem;
+    padding-top: 1rem;
+}

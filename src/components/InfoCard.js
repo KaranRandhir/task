@@ -1,6 +1,6 @@
 import React from "react"
 import "./infocard.css"
-import desktop from "../assets/desktop.png"
+
 import Card from "./Card"
 
 import Slide from 'react-reveal/Slide'

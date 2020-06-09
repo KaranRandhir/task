@@ -59,7 +59,7 @@ const Nav1 = () => {
     Others.
    
     <div class="menu">
-      <div class="item">Blog</div>
+      <Link  class="item" to="/blog">Blog</Link>
       <div class="item">Education</div>
       <div class="item">Privacy</div>
       <div class="item">Terms</div>

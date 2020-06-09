@@ -26,7 +26,7 @@
     text-align: left;
     font-weight: normal;
     margin: 0;
-    line-height: 2.6rem;
+    line-height: 2.4rem;
     margin-right: 5vw;
 
 }
@@ -38,12 +38,14 @@
     height: auto;
     list-style: none;
     color: grey;
+    font-size: 1.2rem;
 }
 .aboutpage .heading .row ul .topic{
     margin-bottom: 2.5vh;
     color: black;
     margin-top: 5vh;
     font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 }
 .aboutpage .heading .row .list {
     height: auto;
@@ -52,6 +54,7 @@
     justify-content: flex-start;
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 .aboutpage .heading .row ul  .heading {
    font-size: 1.8rem;
@@ -86,6 +89,7 @@
     align-items: center;
     justify-content: center;
     border-bottom: double 1px grey;
+    font-family: 'Roboto', sans-serif;
 
 }
 .aboutfooter img {
@@ -95,8 +99,7 @@
 }
 .aboutfooter.crane {
     height: 3rem;
-    
-}
+    }
 .aboutfooter .title {
     font-size: 2.5rem;
     font-weight: 300;
@@ -121,10 +124,40 @@
     top: 2vh;
     left: 0;
 }
+.team-items{
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-auto-rows: auto;
+    grid-gap: 4rem 1rem ;
+    font-family: 'Roboto', sans-serif;
+  
+
+}
+.team-item{
+    width: 300px;
+
+}
+.team-item__heading{
+    font-size: 1.4rem;
+    font-weight: bold;
+  
+}
+.team-item__position{
+    color: grey;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+
+}
 @media only screen and (max-width: 800px) {
 .aboutpage{
     width: 93vw;
     height: auto;
 }
-
+ul li {
+    display: none;
+}
+ul .topic{
+    display: block;
+}
 }

@@ -1,6 +1,6 @@
 import React from "react"
 import "./Home.css"
-import Companies from "./Companies"
+
 import Zoom from "react-reveal"
 import Particles from "react-particles-js"
 class Home extends React.Component{
@@ -149,7 +149,7 @@ class Home extends React.Component{
         
                         <div className="single blue" >
                         <br/>
-                        <button className="search"style={{height:"4rem",fontSize:"1.5",fontWeight:"300",width:"180px",margin:"auto",}}className="ui blue big button">
+                        <button className="search"style={{height:"4rem",fontSize:"1.5",fontWeight:"300",width:"180px",margin:"auto",}}className="ui blue  big button">
                         SEARCH
                         </button>
                         </div>
