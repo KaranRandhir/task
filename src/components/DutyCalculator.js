@@ -27,6 +27,9 @@ const DutyCalculator = () => {
   const cvdAmount=(cvd*(bdAmount+cifAmount+swsAmount)*0.01)
   const gstAmount=(gst*(cifAmount+swsAmount+cvdAmount+bdAmount)*0.01)
   const totalDuty = gstAmount+swsAmount+cvdAmount+bdAmount
+  const [antiDumpingForeign , setAntiDumpingForeign]=useState("")
+  const [antiDumpingPercent,setantiDumpingPercent]=useState("")
+  const antiDumpingValue = (antiDumpingForeign*exchange + (cifAmount+totalDuty)*antiDumpingPercent*0.01)
   console.log(cifAmount)
   console.log(swsAmount)
   console.log(cvdAmount)
@@ -303,7 +306,7 @@ const DutyCalculator = () => {
                   <div class="field">
                   <label>Total Duties %</label>
                     <input
-                    value={totalDuty/cifAmount*100}
+                    value={(totalDuty/cifAmount*100).toFixed(2)}
                       type="number"
                       name="total-duty"
                     
@@ -330,12 +333,16 @@ const DutyCalculator = () => {
             </div>
             <div className="ui form">
               <div className="feild">
-                <label>Anti Dumping (Foreign Values)</label>
-
+                  <label>Anti Dumping {currency}</label>
+                  
                 <input
-                  type="text"
-                  name="shipping[first-name]"
-                  placeholder="percentage"
+                  type="number"
+                  value={antiDumpingForeign}
+                  onChange={(e)=>setAntiDumpingForeign(e.target.value)}
+                  disabled={antiDumpingPercent>0}
+                  name="anti-dumping-value"
+                  placeholder={antiDumpingPercent>0?"disabled":""}
+                
                 />
               </div>
               <br />
@@ -344,20 +351,24 @@ const DutyCalculator = () => {
                 <label>Anti Dumping (Percentage)</label>
 
                 <input
-                  type="text"
-                  name="shipping[first-name]"
-                  placeholder="percentage"
+                  type="number"
+                  disabled={antiDumpingForeign>0}
+                  value={antiDumpingPercent}
+                  placeholder={antiDumpingForeign>0?"disabled":""}
+                  onChange={e=>setantiDumpingPercent(e.target.value)}
+                  name="antiDumpingPercent"
+                  
                 />
               </div>
               <br />
 
               <div className="feild">
-                <label>Total with dumping(INR)</label>
+                <label>Anti Dumping (INR)</label>
 
                 <input
-                  type="text"
-                  name="shipping[first-name]"
-                  placeholder="percentage"
+                  type="number"
+                  value={antiDumpingValue.toFixed(2)}
+                  name="antiDumpingValue"
                 />
               </div>
               <br />
@@ -370,9 +381,10 @@ const DutyCalculator = () => {
                 <label>Total Duties</label>
 
                 <input
-                  type="text"
-                  name="shipping[first-name]"
-                  placeholder="percentage"
+                  value={totalDuty}
+                  type="number"
+                  name="totalduties"
+                  
                 />
               </div>
               <br />
@@ -381,9 +393,9 @@ const DutyCalculator = () => {
                 <label>Anti Dumping Total</label>
 
                 <input
-                  type="text"
-                  name="shipping[first-name]"
-                  placeholder="percentage"
+                  type="number"
+                  name="adtotal"
+                  value={antiDumpingValue}
                 />
               </div>
               <br />
@@ -395,6 +407,7 @@ const DutyCalculator = () => {
                   type="text"
                   name="shipping[first-name]"
                   placeholder="percentage"
+                  value={cifAmount}
                 />
               </div>
               <br />
@@ -403,9 +416,10 @@ const DutyCalculator = () => {
                 <label>Total(including duties)</label>
 
                 <input
-                  type="text"
-                  name="shipping[first-name]"
-                  placeholder="percentage"
+                  type="number"
+                  value={cifAmount+antiDumpingValue+totalDuty}
+                  name="alltotal"
+                  placeholder="total amount"
                 />
               </div>
             </div>

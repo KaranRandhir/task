@@ -11,7 +11,7 @@ const BlogCard = (props) => {
 </div>
     <div className="blog-card__author">{props.date}</div>
             <div className="blog-card__button">
-            <button style={{marginTop:".4rem"}} class="ui blue button">
+            <button style={{marginTop:".4rem"}} class="ui right blue button">
   Read More
 </button>
             </div>
