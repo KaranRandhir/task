@@ -18,6 +18,9 @@ class Blog extends React.Component {
 
 render () {
     console.log(this.state.posts)
+    
+   
+    
     return (
       <>
     <div className="blog">
@@ -47,7 +50,9 @@ render () {
       <div style={{marginTop:"2rem"}} class="ui divider"></div>
       <div className="blog-cards">
     
-        {this.state.posts.map(item => <BlogCard 
+        {this.state.post===0? <div class="ui active inverted dimmer">
+    <div class="ui text loader">Loading</div>
+  </div>:this.state.posts.map(item => <BlogCard 
         title={item.title.rendered} 
         content={parse(item.excerpt.rendered)}
         date={item.modified.substr(0,10)}/>)}

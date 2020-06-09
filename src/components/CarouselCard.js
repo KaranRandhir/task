@@ -5,7 +5,7 @@ import "./carouselCard.css"
 const CarouselCard = ({title,content,img}) => {
     return (
         <div className="carouselCard">
-            <img src={img} className="png"/>
+            <img alt="carouselimg" src={img} className="png"/>
             <div className="service">
             {title}
             </div>
