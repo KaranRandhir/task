@@ -15,7 +15,7 @@ const Manage = () => {
     
     
     <div className="feature">
-    <Fade left><img src={manage}/></Fade>
+    <Fade left><img alt="manage" src={manage}/></Fade>
     <Fade right>
     <div className="text">
     <div className="Name">
@@ -44,13 +44,13 @@ const Manage = () => {
     </div>
     </div>
     </Fade>
-    <Fade right><img src={navigation}/></Fade>
+    <Fade right><img alt="navigation" src={navigation}/></Fade>
     </div>
     
 
     
     <div className="feature">
-    <Fade left><img src={documentation}/></Fade>
+    <Fade left><img alt="documentation" src={documentation}/></Fade>
     <Fade right>
     <div className="text">
     <div className="Name">
@@ -80,9 +80,9 @@ const Manage = () => {
     </div>
     </div>
     </Fade>
-    <Fade right><img src={rates}/></Fade></div>
+    <Fade right><img alt="rates" src={rates}/></Fade></div>
     <div className="feature">
-    <Fade left><img src={time}/></Fade>
+    <Fade left><img alt="time" src={time}/></Fade>
     <Fade right>
     <div className="text">
     <div className="Name">
@@ -102,16 +102,16 @@ const Manage = () => {
     
     
     <div className="feature">
-    <Fade left><img src={manage}/></Fade>
+    <Fade left><img alt="manage" src={manage}/></Fade>
     <Fade right>
     <div className="text">
     <div className="Name">
         Manage
     </div>
     <div>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque malesuada justo a ante interdum, 
-    ut volutpat nunc tincidunt. Ut nisl eros, fermentum a leo quis, convallis feugiat mi.
-     Ut rutrum auctor lorem. Nulla in condimentum lacus. Fusce venenatis metus non orci lobortis pharetra.
+    We manage all your shipment activities from transport and booking, to selecting a custom house agent and
+        providing you with an insurance policy. For every service you can compare and select the supplier from multiple options 
+        available on our platform according to your requirments.
     </div>
     </div>
     </Fade>
@@ -120,16 +120,15 @@ const Manage = () => {
 
    
     <div className="feature">
-    <Fade right><img src={navigation}/></Fade>
+    <Fade right><img alt="navigation" src={navigation}/></Fade>
     <Fade left>
     <div className="text">
     <div className="Name">
         Track Your Shipment
     </div>
     <div>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque malesuada justo a ante interdum, 
-    ut volutpat nunc tincidunt. Ut nisl eros, fermentum a leo quis, convallis feugiat mi.
-     Ut rutrum auctor lorem. Nulla in condimentum lacus. Fusce venenatis metus non orci lobortis pharetra.
+    Indiaport negotiates with shipping lines in place of you to provide you with the best ongoing rate and the frieght volme.
+    Our service <strong>Shipment Management</strong>, keeps you updated, making tracking of shipments easy.
     </div>
     </div>
     </Fade>
@@ -139,16 +138,15 @@ const Manage = () => {
 
     
     <div className="feature">
-    <Fade left><img src={documentation}/></Fade>
+    <Fade left><img alt="documentation-mobile" src={documentation}/></Fade>
     <Fade right>
     <div className="text">
     <div className="Name">
         Online Documentation
     </div>
     <div>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque malesuada justo a ante interdum, 
-    ut volutpat nunc tincidunt. Ut nisl eros, fermentum a leo quis, convallis feugiat mi.
-     Ut rutrum auctor lorem. Nulla in condimentum lacus. Fusce venenatis metus non orci lobortis pharetra.
+    Tired of going through and filling various documents? Indiaport makes documentation hassle-free for you.
+    With its <strong>Multiple Custom Document</strong>, Indiaport gets all your documents in one form to lessen your load.
     </div>
     </div>
     </Fade>
@@ -158,17 +156,16 @@ const Manage = () => {
 
     
     <div className="feature">
-    <Fade right><img src={rates}/></Fade>
+    <Fade right><img alt="rates-mobile" src={rates}/></Fade>
     <Fade left>
     <div className="text">
     <div className="Name">
         Transparency in rates
     </div>
     <div>
-    >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque malesuada justo a ante interdum, 
-    ut volutpat nunc tincidunt. Ut nisl eros, fermentum a leo quis, convallis feugiat mi.
-     Ut rutrum auctor lorem. Nulla in condimentum lacus. Fusce venenatis metus non orci lobortis pharetra.
+    We at IndiaPort treat every trader alike. Massive trader or fresh one you dont have to fret. Laying all the services
+    directly by shipping lines and no more markup of agents as IndiaPort charges <strong>fix fees</strong> to smoothen your 
+    trade and grants trasparency in rate and service.
     </div>
     </div>
     </Fade>
@@ -176,17 +173,17 @@ const Manage = () => {
 
        
     <div className="feature">
-    <Fade right><img src={time}/></Fade>
+    <Fade right><img alt="time-mobile" src={time}/></Fade>
     <Fade left>
     <div className="text">
     <div className="Name">
         Cost Effecient and time saver
     </div>
     <div>
-    >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque malesuada justo a ante interdum, 
-    ut volutpat nunc tincidunt. Ut nisl eros, fermentum a leo quis, convallis feugiat mi.
-     Ut rutrum auctor lorem. Nulla in condimentum lacus. Fusce venenatis metus non orci lobortis pharetra.
+    IndiaPort works closely with its customers to manage every shipment activity all in one platform. From custom clearence process
+    to transport and booking, to selecting a custom hus agent of your choice, to procuring multiple custom documents as well as 
+    insurance policy.Indiaport makes sure that your hours of work is done in a minute and you save time and avoid unnecessary fees.
+    
     </div>
     </div>
     </Fade>

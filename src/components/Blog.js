@@ -36,11 +36,9 @@ render () {
         <div className="blog-heading">
           <div> Blog</div>
           <div className="blog-heading__content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-           Nullam quis molestie augue. 
-           Suspendisse faucibus, orci eu lobortis porttitor, mi dui ornare turpis, at eleifend ipsum mi nec leo
-           . Aenean condimentum nisi nec diam tristique iaculis. 
-          Praesent et laoreet orci. Aliquam scelerisque eget est ac aliquet.
+          Find everything related to international trade, government policies and logistics in our blog. 
+          Browse through interesting articles on export incentives, 
+          the digitalization of the logistics industry and new ways to grow your business.
           </div>
         </div>
         </Fade>
@@ -50,6 +48,8 @@ render () {
       <div className="blog-cards">
     
         {this.state.posts.map(item => <BlogCard 
+        id={item.id}
+        key={item.id}
         title={item.title.rendered} 
         content={parse(item.excerpt.rendered)}
         date={item.modified.substr(0,10)}/>)}

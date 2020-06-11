@@ -381,7 +381,7 @@ const DutyCalculator = () => {
                 <label>Total Duties</label>
 
                 <input
-                  value={totalDuty}
+                  value={totalDuty.toFixed(2)}
                   type="number"
                   name="totalduties"
                   
@@ -395,7 +395,7 @@ const DutyCalculator = () => {
                 <input
                   type="number"
                   name="adtotal"
-                  value={antiDumpingValue}
+                  value={antiDumpingValue.toFixed(4)}
                 />
               </div>
               <br />
@@ -406,7 +406,7 @@ const DutyCalculator = () => {
                 <input
                   type="text"
                   name="shipping[first-name]"
-                  placeholder="percentage"
+                 
                   value={cifAmount}
                 />
               </div>
@@ -417,7 +417,7 @@ const DutyCalculator = () => {
 
                 <input
                   type="number"
-                  value={cifAmount+antiDumpingValue+totalDuty}
+                  value={(cifAmount+antiDumpingValue+totalDuty).toFixed(4)}
                   name="alltotal"
                   placeholder="total amount"
                 />

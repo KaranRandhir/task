@@ -3,9 +3,10 @@ import HomePage from "./HomePage";
 import AboutPage from "./AboutPage";
 import Navbar from "./Navbar";
 import Blog from "./Blog"
-import { Route, Link, BrowserRouter as Router, Switch } from "react-router-dom";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import Cbm from "./Cbm";
 import DutyCalculator from "./DutyCalculator"
+import BlogPage from "./BlogPage"
 
 class App extends React.PureComponent {
   render() {
@@ -19,6 +20,7 @@ class App extends React.PureComponent {
               <Route path="/about" exact component={AboutPage} />
               <Route path="/dutycalculator" exact component={DutyCalculator} />
               <Route path="/blog" exact component={Blog}/>
+              <Route path="/blog/:id" exact component={BlogPage}/>
             </Switch>
           </Navbar>
         </Router>

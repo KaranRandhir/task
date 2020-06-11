@@ -32,7 +32,7 @@ const Cbm = () => {
   const calculateTotal6 = (x) => {
     setTotal6(x);
   };
-  const [items,addItems] = useState([<div className="cbmCalculator small">
+  const [items,addItems] = useState([<div key={(Math.random()*100).toFixed(0)} className="cbmCalculator small">
   <CbmRow multiply={calculateTotal6} show />
   </div>
 ]);
@@ -71,7 +71,7 @@ const Cbm = () => {
         
         <div className="total-cbm">
         <div class="ui = labeled input">
-  <label for="amount" class="ui basic label">Total</label>
+  <label htmlFor="amount" class="ui basic label">Total</label>
   <input disabled value={total1+total2+total3+total4+total5+" cbm"}/>
   
 </div>
@@ -80,8 +80,8 @@ const Cbm = () => {
       </div>
       {items}
    <div className="small">   
-  <button style={{marginTop:"5vh",marginLeft:"4vw"}} onClick={()=>addItems([...items,<div className="cbmCalculator small">
-  <CbmRow multiply={calculateTotal6} show />
+  <button style={{marginTop:"5vh",marginLeft:"4vw"}} onClick={()=>addItems([...items,<div key={(Math.random()*100).toFixed(0)} className="cbmCalculator small">
+  <CbmRow  multiply={calculateTotal6} show />
   </div>])} class="ui large primary button">
   Add 
 </button>

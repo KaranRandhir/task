@@ -5,8 +5,8 @@ import { Link } from "react-router-dom"
 
 const Nav1 = () => {
     return (
-        <div class="ui borderless  menu">
-        <div class="header item company">
+        <div className="ui borderless  menu">
+        <div className="header item company">
         <div style={{display:"flex"}}>
         <img src={crane} className="crane" alt="crane"/>
           <div style={{marginLeft:".5vw"}}>
@@ -29,40 +29,40 @@ const Nav1 = () => {
        </Link>
        
       
-        <div class="ui simple dropdown item light">
+        <div className="ui simple dropdown item light">
     Services.
    
-    <div class="menu">
-      <div class="item">Frieght Forwarding</div>
-      <div class="item">Custom Clearance</div>
-      <div class="item">Insurance</div>
+    <div className="menu">
+      <div className="item">Frieght Forwarding</div>
+      <div className="item">Custom Clearance</div>
+      <div className="item">Insurance</div>
     </div>
     </div>
-    <div class="ui simple dropdown item light">
+    <div className="ui simple dropdown item light">
     Tools.
    
-    <div class="menu">
-      <div class="item">Shipping Documents</div>
-      <div class="item">Container Tracking</div>
+    <div className="menu">
+      <div className="item">Shipping Documents</div>
+      <div className="item">Container Tracking</div>
      </div>
     </div>
-    <div class="ui simple dropdown item light">
+    <div className="ui simple dropdown item light">
     Calculator.
    
-    <div class="menu">
+    <div className="menu">
       <Link to="/dutycalculator" class="item">Duty Calculator</Link>
       <Link to="/cbm" class="item">CBM Calculator</Link>
       
     </div>
     </div>
-    <div class="ui simple dropdown item light">
+    <div className="ui simple dropdown item light">
     Others.
    
     <div class="menu">
-      <Link  class="item" to="/blog">Blog</Link>
-      <div class="item">Education</div>
-      <div class="item">Privacy</div>
-      <div class="item">Terms</div>
+      <Link  className="item" to="/blog">Blog</Link>
+      <div className="item">Education</div>
+      <div className="item">Privacy</div>
+      <div className="item">Terms</div>
     </div>
     </div>
       

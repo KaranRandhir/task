@@ -17,19 +17,25 @@ const SideMenu = ({width},props) => {
         <Link to="/about"style={{fontSize:"1.5rem"}} class="item">
           About
         </Link>
-        <a style={{fontSize:"1.5rem"}} class="item">
+        <div style={{fontSize:"1.5rem"}} class="item">
           Services
-        </a>
-        <a style={{fontSize:"1.5rem"}} class="item">
+        </div>
+        <div style={{fontSize:"1.5rem"}} class="item">
           Tools
-        </a>
+        </div>
         
         <Link to="/cbm"style={{fontSize:"1.5rem"}} class="item">
           Cbm Calculator
         </Link>
-        <a style={{fontSize:"1.5rem"}} class="item">
+        <Link to="/dutycalculator"style={{fontSize:"1.5rem"}} class="item">
+          Duty Calculator
+        </Link>
+        <Link to="/blog"style={{fontSize:"1.5rem"}} class="item">
+          Blog
+        </Link>
+        <div style={{fontSize:"1.5rem"}} class="item">
           Others
-        </a>
+        </div>
 
 
       </div>
