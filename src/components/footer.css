@@ -24,15 +24,7 @@
     margin-bottom: .3rem;
     color: #cad0db;
 }
-.about {
-    margin-bottom: .8rem;
-    font-size: 1.1rem;
-    color: white;
-    border-bottom-width:.3px;
-   border-bottom: solid;
-   border-color: cad0db;
-  padding-bottom: .5rem;
-}
+
 .abouts{
     display: flex;
     flex-direction: row;
@@ -45,6 +37,15 @@
     align-self: center;
     justify-self: center;
 
+}
+.about {
+    margin-bottom: .8rem;
+    font-size: 1.1rem;
+    color: white;
+    border-bottom-width:.3px;
+   border-bottom: solid;
+   border-color: #cad0db;
+  padding-bottom: .5rem;
 }
 
 

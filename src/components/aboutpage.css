@@ -154,7 +154,7 @@
     width: 93vw;
     height: auto;
 }
-ul li {
+.list ul li {
     display: none;
 }
 ul .topic{
